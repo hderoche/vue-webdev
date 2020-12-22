@@ -8,7 +8,9 @@
 | Front     | Vue.js        |               |
 | Back      | Node.js       | Express, dotenv, fs, jwt |
 
-
+### Git
+S'il y a peu de commit sur ce dossier, c'est parce que j'ai commencé par faire un repo git pour le front et un autre pour le server.
+Je viens d'en faire un seul projet git
 
 ## Front
 
@@ -40,6 +42,10 @@ J'ai réaliser une version temporaire du site de mon association avec Angular :
 https://devincipartners.netlify.app/
 
 # Web dev Project
+
+### Git
+There is not many commit on this project because I started using one repo for the front and one for the back. 
+I just marged them
 
 ## Front
 
