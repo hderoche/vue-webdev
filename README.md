@@ -14,6 +14,14 @@ Je viens d'en faire un seul projet git
 
 ## Front
 
+Pour lancer le vue : 
+
+```
+cd front
+npm install
+npm run serve
+```
+
 La partie front-end est en vue.js, elle regroupe et utilise tous les éléments vu en cours.
 * Fetch et requetes vers un server
 * Module d'authentification (JWT token)
@@ -25,6 +33,15 @@ La partie front-end est en vue.js, elle regroupe et utilise tous les éléments 
 * ...
 
 ## Server
+
+
+Pour lancer le serveur : 
+
+```
+cd server
+npm install
+npm run start
+```
 
 La partie server est codée en Node.js avec le framework minimaliste Express.js
 Elle utilise aussi toutes les notions vu en cours : 
@@ -49,6 +66,15 @@ I just marged them
 
 ## Front
 
+
+To start the front-end : 
+
+```
+cd front
+npm install
+npm run serve
+```
+
 The front end part of the website is built using Vue.js framework and uses all the notions we've seen during class.
 * Fetch et request to server
 * Authentication module (JWT token)
@@ -60,6 +86,14 @@ The front end part of the website is built using Vue.js framework and uses all t
 * ...
 
 ## Server
+
+To start the server :
+
+```
+cd server
+npm install
+npm run start
+```
 
 The server is coded in node.js using the minimalist framework express.js.
 The server also uses and implements all the features seen during class.
