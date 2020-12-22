@@ -1,0 +1,23 @@
+POST http://localhost:3600/auth/signin
+Content-Type: application/json
+
+{
+    "user":"hugo10",
+    "password":"test"
+}
+
+### 
+POST http://localhost:3600/auth/register
+Content-Type: application/json
+
+{
+    "user":"hugo11",
+    "password":"test"
+}
+
+###
+POST http://localhost:3600/auth/token HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXNzd29yZCI6IjlmODZkMDgxODg0YzdkNjU5YTJmZWFhMGM1NWFkMDE1YTNiZjRmMWIyYjBiODIyY2QxNWQ2YzE1YjBmMDBhMDgiLCJpYXQiOjE2MDg0OTM4ODksImV4cCI6MTYwODU4MDI4OX0.u1Jb78l8q77vwo1kDxoCvHqAsjuXQ3xTNPU0pOoJaqY
+
+###
+GET http://localhost:3600/api/crypto/list HTTP/1.1
