@@ -12,9 +12,9 @@
           </p>
           <button type="submit">Envoyer</button>
       </form>
-  </div>
   <div>
-      <button @click.prevent="logout">Déconnexion</button>
+    <button @click.prevent="logout">Déconnexion</button>
+  </div>
   </div>
 </template>
 
