@@ -22,7 +22,7 @@ npm install
 npm run serve
 ```
 
-La partie front-end est en vue.js, elle regroupe et utilise tous les éléments vu en cours.
+La partie front-end est en vue.js, elle regroupe et utilise tous les éléments vus en cours.
 * Fetch et requetes vers un server
 * Module d'authentification (JWT token)
 * Manipulation de DOM, css, html
@@ -55,7 +55,7 @@ Elle utilise aussi toutes les notions vu en cours :
 
 #### Autres projets de Webdev fait sur le semestre
 
-J'ai réaliser une version temporaire du site de mon association avec Angular :
+J'ai réalisé une version temporaire du site de mon association avec Angular :
 https://devincipartners.netlify.app/
 
 # Web dev Project
