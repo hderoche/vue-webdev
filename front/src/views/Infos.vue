@@ -13,10 +13,15 @@
                   Il est possible d'acheter des bitcoins en ligne sur des plateformes spécialisées, des bornes physiques ou en échange de n'importe quel bien ou service avec une personne en possédant déjà (la transaction peut se faire de smartphone à smartphone). Les plateformes permettent également de suivre en temps réel l'évolution du prix du bitcoin par rapport à d'autres monnaies ou cryptomonnaies.
               </p>
           </div>
-          <ul class="summary" style="margin-top: 3rem; margin-bottom: 2rem;">
-              <li v-for="link in list_link" :key="link.name">{{ link.name }}</li>
+          <div class="links">
+            <h3 style="margin-bottom: 0.5em;">Summary</h3>
+          <ul class="summary">
+              <li><a class="a-link" href="#1">{{ list_link[0].name }}</a></li>
+              <li><a class="a-link" href="#2">{{ list_link[1].name }}</a></li>
+              <li><a class="a-link" href="#3">{{ list_link[2].name }}</a></li>
           </ul>
-          <div class="wtb">
+          </div>
+          <div class="wtb" id="1">
           <h3>{{ list_link[0].name }}</h3>
             <br>
             <div style="display: inline-flex; align-items: center;">
@@ -65,7 +70,7 @@
               </p>
           </div>
           </div>
-          <div class="wtb">
+          <div class="wtb" id="2">
           <h3>{{ list_link[1].name }}</h3>
             <br>
           <div style="display: inline-flex; align-items: center;">
@@ -125,7 +130,7 @@
               </p>
           </div>
           </div>
-          <div class="wtb">
+          <div class="wtb" id="3">
           <h3>{{ list_link[2].name }}</h3>
             <br>
           <p>
@@ -186,7 +191,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-h1 {
+h1, h3 {
   color:#6C63FF;
 }
 .container {
@@ -220,7 +225,7 @@ p, p ul li {
 .a-link:hover {
     text-decoration: none;
     color: #6C63FF;
-    font-size:large;
+    font-size:13pt;
 }
 .wtb{
   margin-top: 2rem;

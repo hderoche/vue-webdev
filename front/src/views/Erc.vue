@@ -1,8 +1,8 @@
 <template>
     <div>
-      <h1>Dernier bloc miné sur la blockchain Ethereum</h1>
+      <h1 style="color:#6C63FF; margin-top: 0.5em;">Dernier bloc miné sur la blockchain Ethereum</h1>
       <div class="block" v-if="done">
-            <h2>Bloc ETH # {{amount.result.blockNumber}}</h2>
+            <h2 style="margin-top: 0.7em;">Bloc ETH # {{amount.result.blockNumber}}</h2>
             <h3 style="margin-bottom : 5px"><img src="https://img.icons8.com/fluent-systems-regular/24/000000/golden-fever.png"/>
   Miné à {{blockdate}}</h3>
           <img class="iconimg" src="https://img.icons8.com/pastel-glyph/30/000000/dollar-coin.png"/>
@@ -50,9 +50,11 @@ export default {
 .block {
   width: 30%;
   height: 17rem;
+  border: 1px solid rgba(255, 255, 240, 1);
   border-radius: 8px;
+  background: rgba(255, 255, 245, 0.9);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   margin: auto;
-  border: 3px solid black;
   z-index: 0;
 }
 

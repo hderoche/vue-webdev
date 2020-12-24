@@ -1,6 +1,6 @@
 <template>
   <div v-if="etherPrice">
-      <h1>List of the prices</h1>
+      <h1 style="color:#6C63FF; margin-top: 0.5em;">List of the prices</h1>
       <br>
       <p>Click on <strong>indicators</strong> to have more information about the cryptocurrency</p>
       <table style="margin: 2rem auto; border-collapse: collapse; width: 65%;">
@@ -8,7 +8,7 @@
                 <th>Rank</th>
                 <th>Symbol</th>
                 <th>Price</th>
-                <th></th>
+                <th>Currency</th>
                 <th>More</th>
             </thead>
             <tr v-for="elt in top10" :key="elt" class="row">

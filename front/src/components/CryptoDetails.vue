@@ -150,7 +150,10 @@ export default {
 table {
   text-align: center;
   margin: 1rem auto;
-  border: solid black 1px;
+  border: 1px solid rgba(255, 255, 240, 1);
+  border-radius: 8px;
+  background: rgba(255, 255, 245, 0.9);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   border-collapse: collapse;
   height: 200px;
 }
