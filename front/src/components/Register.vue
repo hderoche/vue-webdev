@@ -1,30 +1,32 @@
 <template>
-  <div class="onglet">
-      <h1>Inscription</h1>
-      <form @submit.prevent="register">
-          <p>
-              <label for="username">Username</label>
-              <br>
-              <input type="text" placeholder="Ex. me" id="username" v-model="username" required>
-          </p>
-          <p>
-              <label for="password">Password</label>
-              <br>
-              <input type="password" placeholder="password" id="password" v-model="password" required>
-          </p>
-          <button type="submit">Envoyer</button>
-      </form>
-  </div>
   <div>
-      <p>
-        Username :
-        {{ username }}
-      </p>
-      <p>
-        Password :
-        {{ password }}
-      </p>
+    <div class="onglet">
+        <h1>Inscription</h1>
+        <form @submit.prevent="register">
+            <p>
+                <label for="username">Username</label>
+                <br>
+                <input type="text" placeholder="Ex. me" id="username" v-model="username" required>
+            </p>
+            <p>
+                <label for="password">Password</label>
+                <br>
+                <input type="password" placeholder="password" id="password" v-model="password" required>
+            </p>
+            <button type="submit">Envoyer</button>
+        </form>
     </div>
+    <div>
+        <p>
+          Username :
+          {{ username }}
+        </p>
+        <p>
+          Password :
+          {{ password }}
+        </p>
+      </div>
+  </div>
 </template>
 
 <script>
@@ -52,7 +54,7 @@ export default {
         .then(({ success, message }) => {
           if (success) {
             window.alert(message)
-            this.$router.push({ path: 'sign' })
+            this.$router.push({ path: '/' })
           } else {
             window.alert(message)
           }
