@@ -105,3 +105,13 @@ exports.ethExplorer = (req, res) => {
             })
         })
 }
+
+exports.getLocalCryptoStorage = (req, res) => {
+    db.getDb(cryptofile).then(content => {
+        // console.log(content)
+        res.status(200).json({success: true, data: content})
+    })
+    .catch(err => {
+        res.status(500).json({success: false, data: err})
+    })
+}
