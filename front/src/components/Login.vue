@@ -10,7 +10,7 @@
           <p>
               <label for="password">Password</label>
               <br>
-              <input type="text" placeholder="password" id="password" v-model="password" required>
+              <input type="password" placeholder="password" id="password" v-model="password" required>
           </p>
           <button type="submit">Envoyer</button>
       </form>
