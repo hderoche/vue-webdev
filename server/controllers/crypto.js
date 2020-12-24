@@ -88,6 +88,20 @@ exports.getIndicators = (req, res) => {
     }
 }
 
-dataInCache = function(data) {
-
+exports.ethExplorer = (req, res) => {
+    const time = Math.floor(new Date().getTime() / 1000)
+    const token = process.env.API_KEY
+    fetch('https://api.etherscan.io/api?module=block&action=getblocknobytime&timestamp=' + time + '&closest=before&apikey=' + token)
+      .then(data => data.json())
+      .then(response => {
+        fetch('https://api.etherscan.io/api?module=block&action=getblockreward&blockno=' + response.result + '&apikey=' + token)
+            .then(data => data.json())
+            .then(response => {
+            res.status(200).json({success: true, data: response})
+            })
+            .catch(err => {
+                console.log(err)
+                res.status(500).json({success: false, data: 'error in the etherscan.io request'})
+            })
+        })
 }
