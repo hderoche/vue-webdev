@@ -4,6 +4,7 @@
           <br>
           <br>
           <h1 class="title">Qu'est ce que le Bitcoin ?</h1>
+          <div class="wtb">
               <p>
                   Pour créer et gérer les bitcoins, Bitcoin s'appuie sur un logiciel. Dans ce logiciel, les bitcoins sont créés conformément à un protocole qui rétribue les agents (appelés « mineurs ») qui ont traité des transactionsnote 1. Ces agents mettent à contribution leur puissance de calcul informatique afin de vérifier, de sécuriser et d'inscrire les transactions dans un registre virtuelnote 2, appelé la blockchain, en français chaîne de blocs, nom qui vient du fait que l'entité de base de Bitcoin s'appelle un bloc, et que les blocs sont ensuite reliés en une chaîne, la chaine de blocs.
                 <br><br>
@@ -11,9 +12,11 @@
                 <br><br>
                   Il est possible d'acheter des bitcoins en ligne sur des plateformes spécialisées, des bornes physiques ou en échange de n'importe quel bien ou service avec une personne en possédant déjà (la transaction peut se faire de smartphone à smartphone). Les plateformes permettent également de suivre en temps réel l'évolution du prix du bitcoin par rapport à d'autres monnaies ou cryptomonnaies.
               </p>
+          </div>
           <ul class="summary" style="margin-top: 3rem; margin-bottom: 2rem;">
               <li v-for="link in list_link" :key="link.name">{{ link.name }}</li>
           </ul>
+          <div class="wtb">
           <h3>{{ list_link[0].name }}</h3>
             <br>
             <div style="display: inline-flex; align-items: center;">
@@ -61,6 +64,8 @@
                   Il existe pléthore de plateformes proposant d’acheter des bitcoins. Nous avons réalisé un comparatif complet avec les forces et faiblesses des principaux sites (frais, niveau d’expérience requis, etc.). Vous y trouverez des espaces de trading réservés aux investisseurs confirmés (Binance, Kraken, Bitstamp, etc.) et des courtiers plus intuitifs (Coinbase, Coinhouse, etc.). Les seconds sont généralement plus simples à utiliser mais pratiquent des frais plus élevés. Il existe aussi quelques comptoirs physiques à Paris (Coinhouse), Caen (Bitcoin Avenue), Brest (Byzantine) ou Bordeaux (Comptoir des cybermonnaies). C'est l'occasion d'y recevoir des conseils personnalisés mais les frais sont également plus élevés.
               </p>
           </div>
+          </div>
+          <div class="wtb">
           <h3>{{ list_link[1].name }}</h3>
             <br>
           <div style="display: inline-flex; align-items: center;">
@@ -119,6 +124,8 @@
                 </ul>
               </p>
           </div>
+          </div>
+          <div class="wtb">
           <h3>{{ list_link[2].name }}</h3>
             <br>
           <p>
@@ -144,13 +151,15 @@
                 </li>
             </ul>
           </p>
-          <h3 style="margin-top: 2rem;">Sources</h3>
+          </div>
+          <div class="links">
+          <h3 style="margin-bottom:0.5em;">Sources</h3>
           <ul class="summary">
-              <li>Liens :</li>
               <li><a class="a-link" href="https://www.capital.fr/entreprises-marches/acheter-bitcoin-1260680">Acheter des Bitcoins</a></li>
               <li><a class="a-link" href="https://openclassrooms.com/fr/courses/3925766-comprendre-le-bitcoin-et-la-blockchain/4162526-stocker-ses-bitcoins">Stocker ses Bitcoins</a></li>
               <li><a class="a-link" href="https://www.blockchain-ez.com/pourquoi-la-transformation-blockchain/">Plue-value de la blockchain</a></li>
           </ul>
+          </div>
       </div>
       <Footer/>
   </div>
@@ -177,6 +186,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+h1 {
+  color:#6C63FF;
+}
 .container {
     width: 80%;
     margin: auto;
@@ -208,9 +220,26 @@ p, p ul li {
 .a-link:hover {
     text-decoration: none;
     color: #6C63FF;
-
+    font-size:large;
 }
-
+.wtb{
+  margin-top: 2rem;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 240, 1);
+  border-radius: 8px;
+  background: rgba(255, 255, 245, 0.9);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.links {
+  margin-top: 2rem;
+  width: 40%;
+  margin-left: 30%;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 240, 1);
+  border-radius: 8px;
+  background: rgba(255, 255, 245, 0.9);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
 .left {
     width: 20%;
     margin-right: 2rem;
