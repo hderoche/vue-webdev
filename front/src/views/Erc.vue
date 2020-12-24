@@ -1,22 +1,20 @@
 <template>
-    {{amount}}
+    <h1>Dernier bloc miné sur la blockchain Ethereum</h1>
     <div class="block" v-if="done">
-      <div class="blockInfos">
-        <ul>
-          <li>ETH Block # {{amount.result.blockNumber}}</li>
-          <li>Today : {{blockdate}}</li>
-        </ul>
-      </div>
-      <div class="blockCore">
-        <ul>
-          <li>Block Reward : {{(amount.result.blockReward / 10**18).toFixed(5)}} ETH</li>
-          <li>Miner Address : {{amount.result.blockMiner}}</li>
-        </ul>
-      </div>
+          <h2>Bloc ETH # {{amount.result.blockNumber}}</h2>
+          <h3 style="margin-bottom : 5px"><img src="https://img.icons8.com/fluent-systems-regular/24/000000/golden-fever.png"/>
+Miné à {{blockdate}}</h3>
+        <img class="iconimg" src="https://img.icons8.com/pastel-glyph/30/000000/dollar-coin.png"/>
+        <p>Récompense du bloc :<br>{{(amount.result.blockReward / 10**18).toFixed(5)}} ETH</p>
+        <img class="iconimg" src="https://img.icons8.com/dotty/30/000000/contact-card.png"/>
+        <p>Adresse ERC-20 du mineur : <br>{{amount.result.blockMiner}}</p>
     </div>
+    <Footer/>
 </template>
 
 <script>
+import Footer from '@/components/Footer.vue'
+
 export default {
   name: 'Account',
   data () {
@@ -30,6 +28,9 @@ export default {
       token: '1S3BH8CD2C7KRTA8AE2UENHW8AYFCG824P',
       txhash: []
     }
+  },
+  components: {
+    Footer
   },
   methods: {
     search: function () {
@@ -71,28 +72,20 @@ export default {
 
 <style scoped>
 .block {
-  width: 25%;
-  height: 20rem;
+  width: 30%;
+  height: 17rem;
   border-radius: 8px;
   margin: auto;
   border: 3px solid black;
   z-index: 0;
 }
-.blockInfos {
-  border: 3px solid black;
-  z-index: 1;
-  display: inline;
-  margin-top: 3rem;
-  width: 100%;
-}
-.blockCore {
-  border: 3px solid black;
-  width: 100%;
 
+h1{
+  margin-top : 30px;
+  margin-bottom : 30px;
 }
 
-ul li {
-  text-decoration: none;
-  list-style-type: none;
+.iconimg {
+  margin-top : 15px;
 }
 </style>

@@ -61,9 +61,6 @@ export default {
             this.currencies = res.data
             this.top10 = this.currencies.filter(cur => cur.rank <= 10)
             console.log(this.top10)
-          } else {
-            window.alert(res.data.message)
-            this.$router.push({ path: 'login' })
           }
         })
     } else {

@@ -1,934 +1,934 @@
 {
-  "timestamp": 1608640544,
+  "timestamp": 1608769685,
   "data": [
     {
       "rank": 1,
       "coin_symbol": "BTC",
-      "coin_price": 23119.1,
+      "coin_price": 22891.4,
       "currency": "USD"
     },
     {
       "rank": 2,
       "coin_symbol": "ETH",
-      "coin_price": 612.565,
+      "coin_price": 571.328,
       "currency": "USD"
     },
     {
       "rank": 4,
       "coin_symbol": "XRP",
-      "coin_price": 0.486658,
+      "coin_price": 0.267931,
       "currency": "USD"
     },
     {
       "rank": 5,
       "coin_symbol": "BCH",
-      "coin_price": 318.142,
+      "coin_price": 272.728,
       "currency": "USD"
     },
     {
       "rank": 6,
       "coin_symbol": "BNB",
-      "coin_price": 32.4986,
+      "coin_price": 30.5542,
       "currency": "USD"
     },
     {
       "rank": 7,
       "coin_symbol": "LINK",
-      "coin_price": 12.3109,
+      "coin_price": 10.6328,
       "currency": "USD"
     },
     {
       "rank": 8,
       "coin_symbol": "ADA",
-      "coin_price": 0.157904,
+      "coin_price": 0.133966,
       "currency": "USD"
     },
     {
       "rank": 9,
       "coin_symbol": "DOT",
-      "coin_price": 5.04529,
+      "coin_price": 4.65707,
       "currency": "USD"
     },
     {
       "rank": 10,
       "coin_symbol": "LTC",
-      "coin_price": 108.891,
+      "coin_price": 100.143,
       "currency": "USD"
     },
     {
       "rank": 11,
       "coin_symbol": "BCHSV",
-      "coin_price": 168.866,
+      "coin_price": 153.255,
       "currency": "USD"
     },
     {
       "rank": 13,
       "coin_symbol": "EOS",
-      "coin_price": 2.91995,
+      "coin_price": 2.29362,
       "currency": "USD"
     },
     {
       "rank": 14,
       "coin_symbol": "CRO",
-      "coin_price": 0.0605721,
+      "coin_price": 0.054773,
       "currency": "USD"
     },
     {
       "rank": 15,
       "coin_symbol": "XMR",
-      "coin_price": 152.031,
+      "coin_price": 146.963,
       "currency": "USD"
     },
     {
       "rank": 16,
       "coin_symbol": "TRX",
-      "coin_price": 0.0293613,
+      "coin_price": 0.0244196,
       "currency": "USD"
     },
     {
       "rank": 17,
       "coin_symbol": "XLM",
-      "coin_price": 0.163684,
+      "coin_price": 0.126818,
       "currency": "USD"
     },
     {
       "rank": 18,
       "coin_symbol": "XTZ",
-      "coin_price": 2.16395,
+      "coin_price": 1.79381,
       "currency": "USD"
     },
     {
       "rank": 19,
       "coin_symbol": "NEO",
-      "coin_price": 16.5764,
+      "coin_price": 13.1683,
       "currency": "USD"
     },
     {
       "rank": 20,
       "coin_symbol": "WBTC",
-      "coin_price": 23137.2,
+      "coin_price": 22878.3,
       "currency": "USD"
     },
     {
       "rank": 21,
       "coin_symbol": "LEO",
-      "coin_price": 1.40333,
+      "coin_price": 1.35288,
       "currency": "USD"
     },
     {
       "rank": 22,
       "coin_symbol": "ATOM",
-      "coin_price": 4.99836,
+      "coin_price": 4.26008,
       "currency": "USD"
     },
     {
       "rank": 23,
       "coin_symbol": "XEM",
-      "coin_price": 0.280435,
+      "coin_price": 0.221146,
       "currency": "USD"
     },
     {
       "rank": 24,
       "coin_symbol": "HT",
-      "coin_price": 4.0759,
+      "coin_price": 3.89199,
       "currency": "USD"
     },
     {
       "rank": 26,
       "coin_symbol": "IOTA",
-      "coin_price": 0.302861,
+      "coin_price": 0.265769,
       "currency": "USD"
     },
     {
       "rank": 27,
       "coin_symbol": "VET",
-      "coin_price": 0.015721,
+      "coin_price": 0.0128192,
       "currency": "USD"
     },
     {
       "rank": 28,
       "coin_symbol": "DASH",
-      "coin_price": 102.903,
+      "coin_price": 89.3028,
       "currency": "USD"
     },
     {
       "rank": 29,
       "coin_symbol": "ZEC",
-      "coin_price": 67.6004,
+      "coin_price": 54.2024,
       "currency": "USD"
     },
     {
       "rank": 30,
       "coin_symbol": "UNI",
-      "coin_price": 3.49585,
+      "coin_price": 3.19692,
       "currency": "USD"
     },
     {
       "rank": 31,
       "coin_symbol": "THETA",
-      "coin_price": 1.08891,
+      "coin_price": 1.04339,
       "currency": "USD"
     },
     {
       "rank": 32,
       "coin_symbol": "ETC",
-      "coin_price": 6.05721,
+      "coin_price": 5.0796,
       "currency": "USD"
     },
     {
       "rank": 33,
       "coin_symbol": "FIL",
-      "coin_price": 24.9109,
+      "coin_price": 22.2504,
       "currency": "USD"
     },
     {
       "rank": 34,
       "coin_symbol": "MKR",
-      "coin_price": 539.601,
+      "coin_price": 505.052,
       "currency": "USD"
     },
     {
       "rank": 35,
       "coin_symbol": "UMA",
-      "coin_price": 10.4267,
+      "coin_price": 7.71439,
       "currency": "USD"
     },
     {
       "rank": 36,
       "coin_symbol": "OMG",
-      "coin_price": 2.94307,
+      "coin_price": 2.28685,
       "currency": "USD"
     },
     {
       "rank": 37,
       "coin_symbol": "DGB",
-      "coin_price": 0.0210384,
+      "coin_price": 0.0180294,
       "currency": "USD"
     },
     {
       "rank": 37,
       "coin_symbol": "ONT",
-      "coin_price": 0.517869,
+      "coin_price": 0.397104,
       "currency": "USD"
     },
     {
       "rank": 38,
       "coin_symbol": "YFI",
-      "coin_price": 24511.8,
+      "coin_price": 19474.3,
       "currency": "USD"
     },
     {
       "rank": 39,
       "coin_symbol": "SNX",
-      "coin_price": 6.28147,
+      "coin_price": 6.82334,
       "currency": "USD"
     },
     {
       "rank": 40,
       "coin_symbol": "ABBC",
-      "coin_price": 0.230729,
+      "coin_price": 0.215669,
       "currency": "USD"
     },
     {
       "rank": 41,
       "coin_symbol": "COMP",
-      "coin_price": 147.06,
+      "coin_price": 126.68,
       "currency": "USD"
     },
     {
       "rank": 41,
       "coin_symbol": "OKB",
-      "coin_price": 5.71274,
+      "coin_price": 5.92004,
       "currency": "USD"
     },
     {
       "rank": 42,
       "coin_symbol": "BTT",
-      "coin_price": 0.000319044,
+      "coin_price": 0.000271583,
       "currency": "USD"
     },
     {
       "rank": 42,
       "coin_symbol": "FTT",
-      "coin_price": 4.82473,
+      "coin_price": 4.67854,
       "currency": "USD"
     },
     {
       "rank": 43,
       "coin_symbol": "AAVE",
-      "coin_price": 81.1944,
+      "coin_price": 72.7339,
       "currency": "USD"
     },
     {
       "rank": 45,
       "coin_symbol": "DOGE",
-      "coin_price": 0.00439264,
+      "coin_price": 0.00387975,
       "currency": "USD"
     },
     {
       "rank": 46,
       "coin_symbol": "ALGO",
-      "coin_price": 0.340776,
+      "coin_price": 0.283678,
       "currency": "USD"
     },
     {
       "rank": 47,
       "coin_symbol": "BAT",
-      "coin_price": 0.222406,
+      "coin_price": 0.188396,
       "currency": "USD"
     },
     {
       "rank": 48,
       "coin_symbol": "WAVES",
-      "coin_price": 7.00048,
+      "coin_price": 5.68041,
       "currency": "USD"
     },
     {
       "rank": 49,
       "coin_symbol": "HEDG",
-      "coin_price": 0.493362,
+      "coin_price": 0.421659,
       "currency": "USD"
     },
     {
       "rank": 50,
       "coin_symbol": "ZRX",
-      "coin_price": 0.37453,
+      "coin_price": 0.325057,
       "currency": "USD"
     },
     {
       "rank": 51,
       "coin_symbol": "REN",
-      "coin_price": 0.274655,
+      "coin_price": 0.244022,
       "currency": "USD"
     },
     {
       "rank": 52,
       "coin_symbol": "CELO",
-      "coin_price": 1.62296,
+      "coin_price": 1.38928,
       "currency": "USD"
     },
     {
       "rank": 53,
       "coin_symbol": "KSM",
-      "coin_price": 50.4582,
+      "coin_price": 46.2177,
       "currency": "USD"
     },
     {
       "rank": 54,
       "coin_symbol": "QTUM",
-      "coin_price": 2.55698,
+      "coin_price": 2.03116,
       "currency": "USD"
     },
     {
       "rank": 55,
       "coin_symbol": "ICX",
-      "coin_price": 0.394181,
+      "coin_price": 0.347033,
       "currency": "USD"
     },
     {
       "rank": 56,
       "coin_symbol": "ZIL",
-      "coin_price": 0.0517869,
+      "coin_price": 0.0556859,
       "currency": "USD"
     },
     {
       "rank": 57,
       "coin_symbol": "LRC",
-      "coin_price": 0.163452,
+      "coin_price": 0.135517,
       "currency": "USD"
     },
     {
       "rank": 58,
       "coin_symbol": "EWT",
-      "coin_price": 6.27685,
+      "coin_price": 6.20906,
       "currency": "USD"
     },
     {
       "rank": 59,
       "coin_symbol": "HBAR",
-      "coin_price": 0.0369906,
+      "coin_price": 0.0294405,
       "currency": "USD"
     },
     {
       "rank": 60,
       "coin_symbol": "KNC",
-      "coin_price": 0.874828,
+      "coin_price": 0.737102,
       "currency": "USD"
     },
     {
       "rank": 62,
       "coin_symbol": "WNXM",
-      "coin_price": 17.1082,
+      "coin_price": 15.8613,
       "currency": "USD"
     },
     {
       "rank": 63,
       "coin_symbol": "DCR",
-      "coin_price": 35.6035,
+      "coin_price": 31.9281,
       "currency": "USD"
     },
     {
       "rank": 64,
       "coin_symbol": "QNT",
-      "coin_price": 12.4818,
+      "coin_price": 10.6928,
       "currency": "USD"
     },
     {
       "rank": 65,
       "coin_symbol": "REP",
-      "coin_price": 17.0619,
+      "coin_price": 14.0095,
       "currency": "USD"
     },
     {
       "rank": 66,
       "coin_symbol": "LSK",
-      "coin_price": 1.26693,
+      "coin_price": 1.1583,
       "currency": "USD"
     },
     {
       "rank": 67,
       "coin_symbol": "NEAR",
-      "coin_price": 1.13515,
+      "coin_price": 0.938546,
       "currency": "USD"
     },
     {
       "rank": 68,
       "coin_symbol": "BTG",
-      "coin_price": 9.08582,
+      "coin_price": 7.57693,
       "currency": "USD"
     },
     {
       "rank": 69,
       "coin_symbol": "OCEAN",
-      "coin_price": 0.381003,
+      "coin_price": 0.301023,
       "currency": "USD"
     },
     {
       "rank": 70,
       "coin_symbol": "CVT",
-      "coin_price": 0.110972,
+      "coin_price": 0.107264,
       "currency": "USD"
     },
     {
       "rank": 71,
       "coin_symbol": "SC",
-      "coin_price": 0.00346787,
+      "coin_price": 0.00273865,
       "currency": "USD"
     },
     {
       "rank": 72,
       "coin_symbol": "BAND",
-      "coin_price": 6.09675,
+      "coin_price": 5.0309,
       "currency": "USD"
     },
     {
       "rank": 73,
       "coin_symbol": "TMTG",
-      "coin_price": 0.00783045,
+      "coin_price": 0.00584245,
       "currency": "USD"
     },
     {
       "rank": 74,
       "coin_symbol": "LUNA",
-      "coin_price": 0.500067,
+      "coin_price": 0.452791,
       "currency": "USD"
     },
     {
       "rank": 75,
       "coin_symbol": "ENJ",
-      "coin_price": 0.144032,
+      "coin_price": 0.120409,
       "currency": "USD"
     },
     {
       "rank": 76,
       "coin_symbol": "REV",
-      "coin_price": 0.0115596,
+      "coin_price": 0.0112168,
       "currency": "USD"
     },
     {
       "rank": 77,
       "coin_symbol": "MANA",
-      "coin_price": 0.0834601,
+      "coin_price": 0.0748548,
       "currency": "USD"
     },
     {
       "rank": 78,
       "coin_symbol": "STX",
-      "coin_price": 0.289914,
+      "coin_price": 0.260856,
       "currency": "USD"
     },
     {
       "rank": 79,
       "coin_symbol": "ANT",
-      "coin_price": 2.9641,
+      "coin_price": 2.63136,
       "currency": "USD"
     },
     {
       "rank": 80,
       "coin_symbol": "RSR",
-      "coin_price": 0.0191242,
+      "coin_price": 0.0160446,
       "currency": "USD"
     },
     {
       "rank": 81,
       "coin_symbol": "EGLD",
-      "coin_price": 28.136,
+      "coin_price": 21.3158,
       "currency": "USD"
     },
     {
       "rank": 82,
       "coin_symbol": "AR",
-      "coin_price": 2.486,
+      "coin_price": 2.23405,
       "currency": "USD"
     },
     {
       "rank": 83,
       "coin_symbol": "AVAX",
-      "coin_price": 3.04502,
+      "coin_price": 2.8106,
       "currency": "USD"
     },
     {
       "rank": 84,
       "coin_symbol": "BCD",
-      "coin_price": 0.502148,
+      "coin_price": 0.441117,
       "currency": "USD"
     },
     {
       "rank": 84,
       "coin_symbol": "NANO",
-      "coin_price": 1.05192,
+      "coin_price": 0.95168,
       "currency": "USD"
     },
     {
       "rank": 85,
       "coin_symbol": "NMR",
-      "coin_price": 25.4479,
+      "coin_price": 21.7528,
       "currency": "USD"
     },
     {
       "rank": 86,
       "coin_symbol": "RVN",
-      "coin_price": 0.0138715,
+      "coin_price": 0.0120957,
       "currency": "USD"
     },
     {
       "rank": 87,
       "coin_symbol": "BAL",
-      "coin_price": 12.6415,
+      "coin_price": 11.2259,
       "currency": "USD"
     },
     {
       "rank": 88,
       "coin_symbol": "SXP",
-      "coin_price": 0.834601,
+      "coin_price": 0.602503,
       "currency": "USD"
     },
     {
       "rank": 90,
       "coin_symbol": "SOL",
-      "coin_price": 1.52055,
+      "coin_price": 1.1757,
       "currency": "USD"
     },
     {
       "rank": 91,
       "coin_symbol": "OXT",
-      "coin_price": 0.2545,
+      "coin_price": 0.2232,
       "currency": "USD"
     },
     {
       "rank": 92,
       "coin_symbol": "CKB",
-      "coin_price": 0.00402735,
+      "coin_price": 0.00398997,
       "currency": "USD"
     },
     {
       "rank": 93,
       "coin_symbol": "SUSHI",
-      "coin_price": 2.44369,
+      "coin_price": 2.19548,
       "currency": "USD"
     },
     {
       "rank": 94,
       "coin_symbol": "RUNE",
-      "coin_price": 0.932395,
+      "coin_price": 0.852633,
       "currency": "USD"
     },
     {
       "rank": 95,
       "coin_symbol": "AMPL",
-      "coin_price": 0.804777,
+      "coin_price": 0.787361,
       "currency": "USD"
     },
     {
       "rank": 96,
       "coin_symbol": "DX",
-      "coin_price": 0.00158366,
+      "coin_price": 0.00146276,
       "currency": "USD"
     },
     {
       "rank": 97,
       "coin_symbol": "BTM",
-      "coin_price": 0.0624217,
+      "coin_price": 0.0492164,
       "currency": "USD"
     },
     {
       "rank": 98,
       "coin_symbol": "IOST",
-      "coin_price": 0.00601098,
+      "coin_price": 0.00502086,
       "currency": "USD"
     },
     {
       "rank": 99,
       "coin_symbol": "NEXO",
-      "coin_price": 0.596474,
+      "coin_price": 0.553056,
       "currency": "USD"
     },
     {
       "rank": 100,
       "coin_symbol": "MONA",
-      "coin_price": 1.46113,
+      "coin_price": 1.28488,
       "currency": "USD"
     },
     {
       "rank": 101,
       "coin_symbol": "SNT",
-      "coin_price": 0.0337539,
+      "coin_price": 0.026554,
       "currency": "USD"
     },
     {
       "rank": 102,
       "coin_symbol": "HOT",
-      "coin_price": 0.000693574,
+      "coin_price": 0.000456441,
       "currency": "USD"
     },
     {
       "rank": 103,
       "coin_symbol": "STORJ",
-      "coin_price": 0.341238,
+      "coin_price": 0.273094,
       "currency": "USD"
     },
     {
       "rank": 104,
       "coin_symbol": "BNT",
-      "coin_price": 1.24843,
+      "coin_price": 1.14274,
       "currency": "USD"
     },
     {
       "rank": 105,
       "coin_symbol": "KCS",
-      "coin_price": 0.763394,
+      "coin_price": 0.704974,
       "currency": "USD"
     },
     {
       "rank": 106,
       "coin_symbol": "XVG",
-      "coin_price": 0.00716693,
+      "coin_price": 0.00616196,
       "currency": "USD"
     },
     {
       "rank": 107,
       "coin_symbol": "YFII",
-      "coin_price": 1594.53,
+      "coin_price": 1304.35,
       "currency": "USD"
     },
     {
       "rank": 108,
       "coin_symbol": "CHSB",
-      "coin_price": 0.247375,
+      "coin_price": 0.257889,
       "currency": "USD"
     },
     {
       "rank": 109,
       "coin_symbol": "RLC",
-      "coin_price": 0.876215,
+      "coin_price": 0.712837,
       "currency": "USD"
     },
     {
       "rank": 110,
       "coin_symbol": "KAVA",
-      "coin_price": 1.4965,
+      "coin_price": 1.2276,
       "currency": "USD"
     },
     {
       "rank": 111,
       "coin_symbol": "KMD",
-      "coin_price": 0.564107,
+      "coin_price": 0.48611,
       "currency": "USD"
     },
     {
       "rank": 112,
       "coin_symbol": "PNT",
-      "coin_price": 0.460996,
+      "coin_price": 0.358479,
       "currency": "USD"
     },
     {
       "rank": 113,
       "coin_symbol": "MATIC",
-      "coin_price": 0.0182641,
+      "coin_price": 0.0151083,
       "currency": "USD"
     },
     {
       "rank": 114,
       "coin_symbol": "STEEM",
-      "coin_price": 0.169463,
+      "coin_price": 0.146734,
       "currency": "USD"
     },
     {
       "rank": 115,
       "coin_symbol": "ZEN",
-      "coin_price": 10.4429,
+      "coin_price": 8.44234,
       "currency": "USD"
     },
     {
       "rank": 116,
       "coin_symbol": "JST",
-      "coin_price": 0.0251999,
+      "coin_price": 0.0206022,
       "currency": "USD"
     },
     {
       "rank": 117,
       "coin_symbol": "HNT",
-      "coin_price": 1.62759,
+      "coin_price": 1.2224,
       "currency": "USD"
     },
     {
       "rank": 118,
       "coin_symbol": "HIVE",
-      "coin_price": 0.125999,
+      "coin_price": 0.106674,
       "currency": "USD"
     },
     {
       "rank": 119,
       "coin_symbol": "SRM",
-      "coin_price": 1.13607,
+      "coin_price": 0.946888,
       "currency": "USD"
     },
     {
       "rank": 120,
       "coin_symbol": "BTS",
-      "coin_price": 0.0242751,
+      "coin_price": 0.0205399,
       "currency": "USD"
     },
     {
       "rank": 121,
       "coin_symbol": "UQC",
-      "coin_price": 2.54357,
+      "coin_price": 1.99704,
       "currency": "USD"
     },
     {
       "rank": 122,
       "coin_symbol": "UTK",
-      "coin_price": 0.120451,
+      "coin_price": 0.10772,
       "currency": "USD"
     },
     {
       "rank": 123,
       "coin_symbol": "RIF",
-      "coin_price": 0.13201,
+      "coin_price": 0.133686,
       "currency": "USD"
     },
     {
       "rank": 124,
       "coin_symbol": "IRIS",
-      "coin_price": 0.0422086,
+      "coin_price": 0.0330007,
       "currency": "USD"
     },
     {
       "rank": 125,
       "coin_symbol": "FTM",
-      "coin_price": 0.0189577,
+      "coin_price": 0.016024,
       "currency": "USD"
     },
     {
       "rank": 126,
       "coin_symbol": "ETN",
-      "coin_price": 0.00524111,
+      "coin_price": 0.00478201,
       "currency": "USD"
     },
     {
       "rank": 127,
       "coin_symbol": "WAXP",
-      "coin_price": 0.0402273,
+      "coin_price": 0.0333202,
       "currency": "USD"
     },
     {
       "rank": 128,
       "coin_symbol": "CHZ",
-      "coin_price": 0.0171082,
+      "coin_price": 0.0171166,
       "currency": "USD"
     },
     {
       "rank": 129,
       "coin_symbol": "MCO",
-      "coin_price": 4.88739,
+      "coin_price": 4.82459,
       "currency": "USD"
     },
     {
       "rank": 130,
       "coin_symbol": "VLX",
-      "coin_price": 0.0258934,
+      "coin_price": 0.023807,
       "currency": "USD"
     },
     {
       "rank": 131,
       "coin_symbol": "TOMO",
-      "coin_price": 0.76062,
+      "coin_price": 0.609121,
       "currency": "USD"
     },
     {
       "rank": 132,
       "coin_symbol": "GNO",
-      "coin_price": 66.4876,
+      "coin_price": 61.5343,
       "currency": "USD"
     },
     {
       "rank": 133,
       "coin_symbol": "ELF",
-      "coin_price": 0.110972,
+      "coin_price": 0.0862674,
       "currency": "USD"
     },
     {
       "rank": 134,
       "coin_symbol": "MAID",
-      "coin_price": 0.346325,
+      "coin_price": 0.308118,
       "currency": "USD"
     },
     {
       "rank": 135,
       "coin_symbol": "NRG",
-      "coin_price": 1.40356,
+      "coin_price": 1.37115,
       "currency": "USD"
     },
     {
       "rank": 136,
       "coin_symbol": "ARDR",
-      "coin_price": 0.0675079,
+      "coin_price": 0.060891,
       "currency": "USD"
     },
     {
       "rank": 137,
       "coin_symbol": "TFUEL",
-      "coin_price": 0.0175705,
+      "coin_price": 0.0176264,
       "currency": "USD"
     },
     {
       "rank": 138,
       "coin_symbol": "HC",
-      "coin_price": 0.862344,
+      "coin_price": 0.659558,
       "currency": "USD"
     },
     {
       "rank": 139,
       "coin_symbol": "ANKR",
-      "coin_price": 0.0106348,
+      "coin_price": 0.00892763,
       "currency": "USD"
     },
     {
       "rank": 140,
       "coin_symbol": "MXC",
-      "coin_price": 0.0121214,
+      "coin_price": 0.00979751,
       "currency": "USD"
     },
     {
       "rank": 141,
       "coin_symbol": "UBT",
-      "coin_price": 0.456141,
+      "coin_price": 0.454394,
       "currency": "USD"
     },
     {
       "rank": 142,
       "coin_symbol": "WAN",
-      "coin_price": 0.39002,
+      "coin_price": 0.309011,
       "currency": "USD"
     },
     {
       "rank": 143,
       "coin_symbol": "XZC",
-      "coin_price": 3.46094,
+      "coin_price": 2.86873,
       "currency": "USD"
     },
     {
       "rank": 144,
       "coin_symbol": "ARK",
-      "coin_price": 0.394875,
+      "coin_price": 0.333985,
       "currency": "USD"
     },
     {
       "rank": 146,
       "coin_symbol": "STRAT",
-      "coin_price": 0.713225,
+      "coin_price": 0.706199,
       "currency": "USD"
     },
     {
       "rank": 147,
       "coin_symbol": "CRV",
-      "coin_price": 0.547924,
+      "coin_price": 0.409756,
       "currency": "USD"
     },
     {
       "rank": 148,
       "coin_symbol": "GT",
-      "coin_price": 0.448974,
+      "coin_price": 0.423349,
       "currency": "USD"
     },
     {
       "rank": 149,
       "coin_symbol": "NPXS",
-      "coin_price": 0.000187265,
+      "coin_price": 0.000159754,
       "currency": "USD"
     },
     {
       "rank": 150,
       "coin_symbol": "VSYS",
-      "coin_price": 0.0152586,
+      "coin_price": 0.0132368,
       "currency": "USD"
     },
     {
       "rank": 151,
       "coin_symbol": "WICC",
-      "coin_price": 0.176861,
+      "coin_price": 0.152685,
       "currency": "USD"
     },
     {
       "rank": 152,
       "coin_symbol": "FET",
-      "coin_price": 0.0527116,
+      "coin_price": 0.048611,
       "currency": "USD"
     },
     {
       "rank": 153,
       "coin_symbol": "HXRO",
-      "coin_price": 0.169926,
+      "coin_price": 0.165962,
       "currency": "USD"
     },
     {
       "rank": 154,
       "coin_symbol": "AION",
-      "coin_price": 0.0739812,
+      "coin_price": 0.0623043,
       "currency": "USD"
     },
     {
       "rank": 155,
       "coin_symbol": "AOA",
-      "coin_price": 0.00208072,
+      "coin_price": 0.00159754,
       "currency": "USD"
     },
     {
       "rank": 156,
       "coin_symbol": "SOLVE",
-      "coin_price": 0.0964068,
+      "coin_price": 0.0846699,
       "currency": "USD"
     },
     {
       "rank": 157,
       "coin_symbol": "AE",
-      "coin_price": 0.124381,
+      "coin_price": 0.108047,
       "currency": "USD"
     },
     {
       "rank": 158,
       "coin_symbol": "POWR",
-      "coin_price": 0.100568,
+      "coin_price": 0.0871803,
       "currency": "USD"
     },
     {
@@ -940,187 +940,187 @@
     {
       "rank": 160,
       "coin_symbol": "TRAC",
-      "coin_price": 0.160216,
+      "coin_price": 0.191601,
       "currency": "USD"
     },
     {
       "rank": 161,
       "coin_symbol": "TRB",
-      "coin_price": 20.0443,
+      "coin_price": 16.1384,
       "currency": "USD"
     },
     {
       "rank": 162,
       "coin_symbol": "DATA",
-      "coin_price": 0.037453,
+      "coin_price": 0.0347949,
       "currency": "USD"
     },
     {
       "rank": 163,
       "coin_symbol": "ONE",
-      "coin_price": 0.00508621,
+      "coin_price": 0.00433619,
       "currency": "USD"
     },
     {
       "rank": 164,
       "coin_symbol": "AGI",
-      "coin_price": 0.0467007,
+      "coin_price": 0.0455538,
       "currency": "USD"
     },
     {
       "rank": 165,
       "coin_symbol": "IOTX",
-      "coin_price": 0.00716693,
+      "coin_price": 0.00593374,
       "currency": "USD"
     },
     {
       "rank": 166,
       "coin_symbol": "ELA",
-      "coin_price": 1.60701,
+      "coin_price": 1.52846,
       "currency": "USD"
     },
     {
       "rank": 167,
       "coin_symbol": "ORBS",
-      "coin_price": 0.0131779,
+      "coin_price": 0.0128192,
       "currency": "USD"
     },
     {
       "rank": 168,
       "coin_symbol": "GXS",
-      "coin_price": 0.355341,
+      "coin_price": 0.307431,
       "currency": "USD"
     },
     {
       "rank": 169,
       "coin_symbol": "UOS",
-      "coin_price": 0.111897,
+      "coin_price": 0.111372,
       "currency": "USD"
     },
     {
       "rank": 170,
       "coin_symbol": "DGTX",
-      "coin_price": 0.0115596,
+      "coin_price": 0.00912883,
       "currency": "USD"
     },
     {
       "rank": 171,
       "coin_symbol": "WXT",
-      "coin_price": 0.00994585,
+      "coin_price": 0.00865981,
       "currency": "USD"
     },
     {
       "rank": 172,
       "coin_symbol": "BQX",
-      "coin_price": 0.142414,
+      "coin_price": 0.132596,
       "currency": "USD"
     },
     {
       "rank": 173,
       "coin_symbol": "MLN",
-      "coin_price": 30.4941,
+      "coin_price": 27.9342,
       "currency": "USD"
     },
     {
       "rank": 174,
       "coin_symbol": "TT",
-      "coin_price": 0.00482034,
+      "coin_price": 0.00439056,
       "currency": "USD"
     },
     {
       "rank": 176,
       "coin_symbol": "WTC",
-      "coin_price": 0.337539,
+      "coin_price": 0.273865,
       "currency": "USD"
     },
     {
       "rank": 177,
       "coin_symbol": "AKRO",
-      "coin_price": 0.0110741,
+      "coin_price": 0.0104434,
       "currency": "USD"
     },
     {
       "rank": 178,
       "coin_symbol": "CRPT",
-      "coin_price": 0.250611,
+      "coin_price": 0.289805,
       "currency": "USD"
     },
     {
       "rank": 179,
       "coin_symbol": "XTP",
-      "coin_price": 0.00624217,
+      "coin_price": 0.00480719,
       "currency": "USD"
     },
     {
       "rank": 180,
       "coin_symbol": "BTU",
-      "coin_price": 0.551854,
+      "coin_price": 0.587668,
       "currency": "USD"
     },
     {
       "rank": 181,
       "coin_symbol": "RDD",
-      "coin_price": 0.00115596,
+      "coin_price": 0.000915655,
       "currency": "USD"
     },
     {
       "rank": 182,
       "coin_symbol": "MX",
-      "coin_price": 0.135247,
+      "coin_price": 0.131854,
       "currency": "USD"
     },
     {
       "rank": 183,
       "coin_symbol": "BHT",
-      "coin_price": 0.155592,
+      "coin_price": 0.157502,
       "currency": "USD"
     },
     {
       "rank": 184,
       "coin_symbol": "SYS",
-      "coin_price": 0.0598786,
+      "coin_price": 0.0496743,
       "currency": "USD"
     },
     {
       "rank": 186,
       "coin_symbol": "NULS",
-      "coin_price": 0.266333,
+      "coin_price": 0.223428,
       "currency": "USD"
     },
     {
       "rank": 187,
       "coin_symbol": "WIN",
-      "coin_price": 0.0000762932,
+      "coin_price": 0.0000684662,
       "currency": "USD"
     },
     {
       "rank": 188,
       "coin_symbol": "POLY",
-      "coin_price": 0.0675079,
+      "coin_price": 0.0618478,
       "currency": "USD"
     },
     {
       "rank": 189,
       "coin_symbol": "AVA",
-      "coin_price": 0.753684,
+      "coin_price": 0.677815,
       "currency": "USD"
     },
     {
       "rank": 191,
       "coin_symbol": "OGN",
-      "coin_price": 0.141489,
+      "coin_price": 0.114567,
       "currency": "USD"
     },
     {
       "rank": 205,
       "coin_symbol": "SUN",
-      "coin_price": 8.29977,
+      "coin_price": 6.16196,
       "currency": "USD"
     },
     {
       "rank": 210,
       "coin_symbol": "CVC",
-      "coin_price": 0.0899335,
+      "coin_price": 0.0794208,
       "currency": "USD"
     }
   ]
