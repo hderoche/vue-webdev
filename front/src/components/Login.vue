@@ -1,18 +1,20 @@
 <template>
-  <div>
-      <h1>Se connecter</h1>
+  <div class="onglet">
+      <h1>Connexion</h1>
       <form @submit.prevent="login">
           <p>
               <label for="username">Username</label>
+              <br>
               <input type="text" placeholder="username" id="username" v-model="username" required>
           </p>
           <p>
               <label for="password">Password</label>
+              <br>
               <input type="text" placeholder="password" id="password" v-model="password" required>
           </p>
           <button type="submit">Envoyer</button>
       </form>
-  <div>
+  <div class="deco">
     <button @click.prevent="logout">Déconnexion</button>
   </div>
   </div>
@@ -59,15 +61,44 @@ export default {
 
 <style scoped>
 
+h1 {
+  color:#6C63FF;
+  margin-bottom: 1em;
+}
+p {
+  margin-bottom: 1em;
+}
 input {
-    padding: 1% 2%;
-    border-radius: 8px;
-    font-size:medium;
+  padding: 1% 2% 1% 1%;
+  border-radius: 8px;
+  font-size:medium;
+  margin-top: 8px;
 }
 input:focus {
-    outline:0;
+  outline:0;
 }
 label {
-    margin-right: 1rem;
+  color: #6C63FF;
+}
+.onglet {
+  width: 60%;
+  height: 450px;
+  margin-left: 20%;
+  margin-top: 3em;
+  padding: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  border-radius: 8px;
+  background:rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+button {
+  margin-top: 0.5em;
+}
+button:hover{
+  color: white;
+  background-color:darkblue;
+}
+.deco {
+  margin-top: 20px;
 }
 </style>

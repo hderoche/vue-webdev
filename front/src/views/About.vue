@@ -22,11 +22,16 @@
       <i>Using QuantifyCrypto and Etherscan APIs</i>
     </p>
   </div>
+  <Footer/>
 </template>
 
 <script>
-export default {
+import Footer from '@/components/Footer.vue'
 
+export default {
+  components: {
+    Footer
+  }
 }
 </script>
 

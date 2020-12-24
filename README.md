@@ -26,8 +26,8 @@ La partie front-end est en vue.js, elle regroupe et utilise tous les éléments 
 * Fetch et requetes vers un server
 * Module d'authentification (JWT token)
 * Manipulation de DOM, css, html
-* Manipulation d'array et différents types de javascript
-* Utilisation des router-link pour éviter le rechargement des pages
+* Manipulation d'array et différents types javascript
+* Utilisation des router-links pour éviter le rechargement des pages
 * Composants et Vue de Vue.js
 * Proxy vers le server (phase de developpement seulement)
 * ...
@@ -44,7 +44,7 @@ npm run start
 ```
 
 La partie server est codée en Node.js avec le framework minimaliste Express.js
-Elle utilise aussi toutes les notions vu en cours : 
+Elle utilise aussi toutes les notions vus en cours : 
 * Fetch (isomorphic-fetch) pour appel vers des API
 * Module d'autentification
 * Utilisation d'un `.env` pour stocker les variables sensibles (clés API)
@@ -105,9 +105,3 @@ The server also uses and implements all the features seen during class.
   * if two request are made too close to each other, I use the cache in order to display the informations
   * if the request is made after a certain `timeout` variable that I have set in the code, then it sends a request to fetch the most recent data.
 * 
-
-#### Other Web dev projects
-
-I made a temporary version of the website for my association using Angular : 
-https://devincipartners.netlify.app/
-
