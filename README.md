@@ -53,6 +53,10 @@ Elle utilise aussi toutes les notions vus en cours :
   * sinon je renvoie une requete pour avoir les données les plus récentes
 * ...
 
+#### Autres projets de Webdev fait sur le semestre
+
+J'ai réalisé une version temporaire du site de mon association avec Angular :
+https://devincipartners.netlify.app/
 
 # Web dev Project
 
