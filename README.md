@@ -21,6 +21,8 @@ cd front
 npm install
 npm run serve
 ```
+La partie front démarre en mode développement (hot-reload) sur le port 8080, nous avons essayé de le déployer en `npm run build` mais le proxy ne marche plus avec le server.
+Il faut aussi télécharger le package **serve** pour pouvoir host le dossier `./dist`
 
 La partie front-end est en vue.js, elle regroupe et utilise tous les éléments vus en cours.
 * Fetch et requetes vers un server
@@ -42,6 +44,7 @@ cd server
 npm install
 npm run start
 ```
+Le serveur démarre en mode développement en utilisant **nodemon** (hot-reload), nous avions essayé de voir pour le mettre sur heroku, mais sans succès.
 
 La partie server est codée en Node.js avec le framework minimaliste Express.js
 Elle utilise aussi toutes les notions vus en cours : 
