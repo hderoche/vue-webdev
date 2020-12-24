@@ -8,7 +8,7 @@
           <img class="iconimg" src="https://img.icons8.com/pastel-glyph/30/000000/dollar-coin.png"/>
           <p>Récompense du bloc :<br>{{(amount.result.blockReward / 10**18).toFixed(5)}} ETH</p>
           <img class="iconimg" src="https://img.icons8.com/dotty/30/000000/contact-card.png"/>
-          <p>Adresse ERC-20 du mineur : <br>{{amount.result.blockMiner}}</p>
+          <p class="css-overflow">Adresse ERC-20 du mineur : <br>{{amount.result.blockMiner}}</p>
       </div>
       <Footer/>
     </div>
@@ -63,5 +63,9 @@ h1{
 
 .iconimg {
   margin-top : 15px;
+}
+
+.css-overflow {
+  word-wrap: break-word;
 }
 </style>
