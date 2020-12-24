@@ -2,11 +2,16 @@
 
 # Projet de Développement Web
 
-
 |           | Framework     | Libraries     |
 | --------- |:-------------:|:-------------:|
 | Front     | Vue.js        |               |
 | Back      | Node.js       | Express, dotenv, fs, jwt |
+
+### Fichiers `.env`
+Les fichiers `.env` ne sont pas censés être dans les répo git mais dans le `.gitignore`, cependant pour que le projet puisse se lancer facilement nous les avons ajoutés.
+Ces clés seront désactivés après la fin du semestre et ne seront plus utiles.
+
+**Merci de ne pas les utiliser en dehors de ce projet.**
 
 ### Git
 S'il y a peu de commit sur ce dossier, c'est parce que j'ai commencé par faire un repo git pour le front et un autre pour le server.
@@ -21,6 +26,8 @@ cd front
 npm install
 npm run serve
 ```
+La partie front démarre en mode développement (hot-reload) sur le port 8080, nous avons essayé de le déployer en `npm run build` mais le proxy ne marche plus avec le server.
+Il faut aussi télécharger le package **serve** pour pouvoir host le dossier `./dist`
 
 La partie front-end est en vue.js, elle regroupe et utilise tous les éléments vus en cours.
 * Fetch et requetes vers un server
@@ -42,6 +49,7 @@ cd server
 npm install
 npm run start
 ```
+Le serveur démarre en mode développement en utilisant **nodemon** (hot-reload), nous avions essayé de voir pour le mettre sur heroku, mais sans succès.
 
 La partie server est codée en Node.js avec le framework minimaliste Express.js
 Elle utilise aussi toutes les notions vus en cours : 
