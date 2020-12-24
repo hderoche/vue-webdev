@@ -2,7 +2,7 @@
   <nav>
     <router-link class="nav-link menu-item" to="/">Home</router-link>
     <router-link class="nav-link menu-item" to="/crypto">Crypto-monnaies</router-link>
-    <router-link class="nav-link menu-item" to="/erc20">ERC-20</router-link>
+    <router-link class="nav-link menu-item" to="/erc20">ETH Explorer</router-link>
     <router-link class="nav-link menu-item" to="/infos">Infos</router-link>
     <router-link class="nav-link menu-item" to="/about">À propos</router-link>
     <!-- Passer la liste des liens au component : Dropdown -->
