@@ -14,10 +14,11 @@
           <ul class="summary" style="margin-top: 3rem; margin-bottom: 2rem;">
               <li v-for="link in list_link" :key="link.name">{{ link.name }}</li>
           </ul>
+          <br>
           <h3>{{ list_link[0].name }}</h3>
             <br>
             <div style="display: inline-flex; align-items: center;">
-              <svg class="left" version="1.1" width="auto" height="auto" viewBox="0 0 37.25 37.25" style="enable-background:new 0 0 37.25 37.25;" xml:space="preserve">
+              <svg class="left" version="1.1" viewBox="0 0 37.25 37.25" style="enable-background:new 0 0 37.25 37.25;" xml:space="preserve">
     <g>
         <path d="M11.612,28.643c-0.172-0.101-0.424-0.191-0.752-0.275c0.306-0.104,0.553-0.232,0.738-0.393
             c0.188-0.162,0.328-0.347,0.426-0.552c0.102-0.207,0.151-0.426,0.151-0.657c0-0.316-0.094-0.607-0.28-0.875
@@ -61,10 +62,12 @@
                   Il existe pléthore de plateformes proposant d’acheter des bitcoins. Nous avons réalisé un comparatif complet avec les forces et faiblesses des principaux sites (frais, niveau d’expérience requis, etc.). Vous y trouverez des espaces de trading réservés aux investisseurs confirmés (Binance, Kraken, Bitstamp, etc.) et des courtiers plus intuitifs (Coinbase, Coinhouse, etc.). Les seconds sont généralement plus simples à utiliser mais pratiquent des frais plus élevés. Il existe aussi quelques comptoirs physiques à Paris (Coinhouse), Caen (Bitcoin Avenue), Brest (Byzantine) ou Bordeaux (Comptoir des cybermonnaies). C'est l'occasion d'y recevoir des conseils personnalisés mais les frais sont également plus élevés.
               </p>
           </div>
+          <br>
+          <br>
           <h3>{{ list_link[1].name }}</h3>
             <br>
           <div style="display: inline-flex; align-items: center;">
-              <svg class="left" version="1.1" width="auto" height="auto" viewBox="0 0 38.027 38.027" style="enable-background:new 0 0 38.027 38.027;" xml:space="preserve">
+              <svg class="left" version="1.1" viewBox="0 0 38.027 38.027" style="enable-background:new 0 0 38.027 38.027;" xml:space="preserve">
     <g>
         <path d="M35.63,7.074C26.181,4.043,19.018,0,19.018,0h-0.011c0,0-7.058,4.098-16.609,7.074c0,0-3.351,21.314,16.56,30.953h0.11
             C38.981,28.389,35.63,7.074,35.63,7.074z M19.245,35.898l-0.231,0.121l-0.233-0.123C4.078,28.158,3.8,13.189,4.064,8.787
@@ -109,7 +112,7 @@
             s-0.368,0.352-0.604,0.416C19.814,21.287,19.515,21.32,19.155,21.32z"/>
     </g>
               </svg>
-              <p>
+              <p class="right">
                 Vous avez 4 catégories :
                 <ul>
                     <li>Mobile : ce sont des portefeuilles sous forme d'application mobile. Tant que vous avez votre smartphone sur vous avec l'application, vous avez donc votre argent sur vous.</li>
@@ -119,6 +122,8 @@
                 </ul>
               </p>
           </div>
+            <br>
+            <br>
           <h3>{{ list_link[2].name }}</h3>
             <br>
           <p>
@@ -215,5 +220,9 @@ p, p ul li {
     width: 20%;
     margin-right: 2rem;
     max-height: 100px;
+}
+
+.right {
+  width: 80%;
 }
 </style>
