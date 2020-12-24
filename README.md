@@ -2,11 +2,16 @@
 
 # Projet de Développement Web
 
-
 |           | Framework     | Libraries     |
 | --------- |:-------------:|:-------------:|
 | Front     | Vue.js        |               |
 | Back      | Node.js       | Express, dotenv, fs, jwt |
+
+### Fichiers `.env`
+Les fichiers `.env` ne sont pas censés être dans les répo git mais dans le `.gitignore`, cependant pour que le projet puisse se lancer facilement nous les avons ajoutés.
+Ces clés seront désactivés après la fin du semestre et ne seront plus utiles.
+
+**Merci de ne pas les utiliser en dehors de ce projet.**
 
 ### Git
 S'il y a peu de commit sur ce dossier, c'est parce que j'ai commencé par faire un repo git pour le front et un autre pour le server.
