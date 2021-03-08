@@ -41,14 +41,14 @@ export default {
     register () {
       const user = this.username
       const password = this.password
-      const payload = { user, password }
+      const payload = JSON.stringify({ user, password })
       console.log(payload)
       fetch('/api/auth/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify(payload)
+        body: payload
       })
         .then(res => res.json())
         .then(({ success, message }) => {
