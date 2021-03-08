@@ -1,4 +1,4 @@
-POST http://localhost:3600/auth/signin
+POST http://localhost:3600/api/auth/signin
 Content-Type: application/json
 
 {
@@ -7,7 +7,7 @@ Content-Type: application/json
 }
 
 ### 
-POST http://localhost:3600/auth/register
+POST http://localhost:3600/api/auth/register
 Content-Type: application/json
 
 {
@@ -16,8 +16,9 @@ Content-Type: application/json
 }
 
 ###
-POST http://localhost:3600/auth/token HTTP/1.1
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXNzd29yZCI6IjlmODZkMDgxODg0YzdkNjU5YTJmZWFhMGM1NWFkMDE1YTNiZjRmMWIyYjBiODIyY2QxNWQ2YzE1YjBmMDBhMDgiLCJpYXQiOjE2MDg0OTM4ODksImV4cCI6MTYwODU4MDI4OX0.u1Jb78l8q77vwo1kDxoCvHqAsjuXQ3xTNPU0pOoJaqY
+POST http://localhost:3600/api/auth/token HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXNzd29yZCI6IjlmODZkMDgxODg0YzdkNjU5YTJmZWFhMGM1NWFkMDE1YTNiZjRmMWIyYjBiODIyY2QxNWQ2YzE1YjBmMDBhMDgiLCJpYXQiOjE2MTUyMDk1OTAsImV4cCI6MTYxNTI5NTk5MH0.pz4c2VhCVrTc2Rb1NmWe_1BhBkqKwFxv4GRY0YU6D20
 
 ###
 GET http://localhost:3600/api/crypto/list HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXNzd29yZCI6IjlmODZkMDgxODg0YzdkNjU5YTJmZWFhMGM1NWFkMDE1YTNiZjRmMWIyYjBiODIyY2QxNWQ2YzE1YjBmMDBhMDgiLCJpYXQiOjE2MTUyMDk1OTAsImV4cCI6MTYxNTI5NTk5MH0.pz4c2VhCVrTc2Rb1NmWe_1BhBkqKwFxv4GRY0YU6D20
