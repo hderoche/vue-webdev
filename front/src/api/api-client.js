@@ -8,5 +8,9 @@ export default {
       },
       body: JSON.stringify(options.body)
     }).then(res => res.json())
+  },
+  get (url, options) {
+    return fetch(url, {method: 'get', headers: {...options.headers}})
+    .then(res => res.json())
   }
 }

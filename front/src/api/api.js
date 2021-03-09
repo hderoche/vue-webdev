@@ -7,5 +7,8 @@ export default {
   },
   register (credentials) {
     return jsonClient.post(apiRoutes.register, { body: credentials })
+  },
+  checkToken (token) {
+    return jsonClient.get(apiRoutes.checkToken, { headers: {Authorization: 'Bearer ' + token} })
   }
 }
