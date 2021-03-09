@@ -43,7 +43,7 @@ export default {
       const password = this.password
       const payload = { user, password }
       console.log(payload)
-      fetch('/api/auth/register', {
+      fetch('/api/user', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

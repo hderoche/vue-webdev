@@ -12,7 +12,7 @@
               <br>
               <input type="password" placeholder="password" id="password" v-model="password" required>
           </p>
-          <button type="submit">Envoyer</button>
+          <button type="submit" value="Se connecter"></button>
       </form>
   <div class="deco">
     <button @click.prevent="logout">Déconnexion</button>
@@ -34,14 +34,7 @@ export default {
       const user = this.username
       const password = this.password
       const payload = { user, password }
-      fetch('/api/auth/signin', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(payload)
-      })
-        .then(res => res.json())
+      this.$store.dispatch('login', payload)
         .then(({ success, token }) => {
           if (success) {
             localStorage.setItem('token', token)
