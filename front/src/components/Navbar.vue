@@ -1,36 +1,26 @@
 <template>
   <nav>
-    <router-link class="nav-link menu-item" to="/">Home</router-link>
-    <router-link class="nav-link menu-item" to="/crypto">Crypto-monnaies</router-link>
-    <router-link class="nav-link menu-item" to="/erc20">ETH Explorer</router-link>
-    <router-link class="nav-link menu-item" to="/infos">Infos</router-link>
-    <router-link class="nav-link menu-item" to="/about">À propos</router-link>
+    <roudiv>
+         <ter-link class="nav-link menu-item" to="/">Home</router-link>
+             <router-link class="nav-link menu-item" to="/crypto">Crypto-monnaies</router-link>
+             <router-link class="nav-link menu-item" to="/erc20">ETH Explorer</router-link>
+             <router-link class="nav-link menu-item" to="/infos">Infos</router-link>
+             <router-link class="nav-link menu-item" to="/about">À propos</router-link>
+             <router-link class="nav-link menu-item" to='/login' v-if="!user"></router-link>
+             <router-link class="nav-link menu-item" v-if="user"></router-link>
+       </div>
     <!-- Passer la liste des liens au component : Dropdown -->
-    <Dropdown title="Rejoindre" :items="services" />
   </nav>
 </template>
 
 <script>
-import Dropdown from './Dropdown'
-
+import { mapState } from 'vuex'
 export default {
   name: 'navbar',
-  components: {
-    Dropdown
-  },
-  data () {
-    return {
-      connected: true,
-      services: [
-        {
-          title: 'S\'inscrire',
-          link: 'register'
-        },
-        {
-          title: 'Se connecter',
-          link: 'login'
-        }
-      ]
+  computed: mapState(['user']),
+  methods: {
+    tryLogout () {
+      this.$store.dispatch('logout')
     }
   }
 }

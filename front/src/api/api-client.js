@@ -10,7 +10,7 @@ export default {
     }).then(res => res.json())
   },
   get (url, options) {
-    return fetch(url, {method: 'get', headers: {...options.headers}})
-    .then(res => res.json())
+    return fetch(url, { method: 'get', headers: { ...options.headers } })
+      .then(res => res.json())
   }
 }

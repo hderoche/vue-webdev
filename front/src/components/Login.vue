@@ -1,7 +1,11 @@
 <template>
   <div class="onglet">
       <h1>Connexion</h1>
-      <form @submit.prevent="login">
+      <div class="deco" v-if="this.$store.state.user !== undefined">
+        <button @click.prevent="tryLogout">Déconnexion</button>
+      </div>
+      <div v-else>
+        <form @submit.prevent="tryLogin">
           <p>
               <label for="username">Username</label>
               <br>
@@ -12,11 +16,9 @@
               <br>
               <input type="password" placeholder="password" id="password" v-model="password" required>
           </p>
-          <button type="submit" value="Se connecter"></button>
-      </form>
-  <div class="deco">
-    <button @click.prevent="logout">Déconnexion</button>
-  </div>
+          <button type="submit" value="Se connecter"> se connecter</button>
+        </form>
+      </div>
   </div>
 </template>
 
@@ -30,23 +32,16 @@ export default {
     }
   },
   methods: {
-    login () {
+    tryLogin () {
       const user = this.username
       const password = this.password
       const payload = { user, password }
       this.$store.dispatch('login', payload)
-        .then(({ success, token }) => {
-          if (success) {
-            localStorage.setItem('token', token)
-            window.alert('Successfully logged in')
-            this.$router.push({ path: '/' })
-          }
-        })
-        .catch(error => { this.error = error })
+      this.username = ''
+      this.password = ''
     },
-    logout () {
-      localStorage.removeItem('token')
-      this.$router.push({ path: '/' })
+    tryLogout () {
+      this.$store.dispatch('logout')
     }
   }
 }

@@ -1,8 +1,14 @@
 <template>
   <div id="app">
-    <header>
-      <Navbar/>
-    </header>
+       <div>
+          <router-link class="nav-link menu-item" to="/">Home</router-link> |
+          <router-link class="nav-link menu-item" to="/crypto">Crypto-monnaies</router-link> |
+          <router-link class="nav-link menu-item" to="/erc20">ETH Explorer</router-link> |
+          <router-link class="nav-link menu-item" to="/infos">Infos</router-link> |
+          <router-link class="nav-link menu-item" to="/about">À propos</router-link> |
+          <router-link class="nav-link menu-item" to='/login' v-if="!user">Se connecter</router-link> |
+          <router-link class="nav-link menu-item" to="" v-if="user"><button @click.prevent="tryLogout">Logout</button></router-link>
+       </div>
     <body>
       <router-view/>
     </body>
@@ -10,15 +16,16 @@
 </template>
 
 <script>
-import Navbar from './components/Navbar'
-
+import { mapState } from 'vuex'
 export default {
   name: 'app',
-  components: {
-    Navbar
+  computed: mapState(['user']),
+  mounted () {
+    this.$store.dispatch('checkToken')
   },
-  data () {
-    return {
+  methods: {
+    tryLogout () {
+      this.$store.dispatch('logout')
     }
   }
 }
@@ -44,8 +51,30 @@ body {
 }
 header {
   width: 100vw;
-  background-color: #222;
-  padding: 15px;
 }
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav .menu-item {
+  color: #FFF;
+  padding: 10px 20px;
+  position: relative;
+  text-align: center;
+  border-bottom: 3px solid transparent;
+  display: flex;
+  transition: 0.4s;
+  text-decoration: none;
+}
+nav .menu-item.active,
+nav .menu-item:hover {
+  background-color: #444;
+  border-bottom-color: #6C63FF;
+}
+nav .menu-item a {
+  color: inherit;
+  text-decoration: none;
+ }
 
 </style>

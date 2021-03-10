@@ -9,6 +9,9 @@ export default {
     return jsonClient.post(apiRoutes.register, { body: credentials })
   },
   checkToken (token) {
-    return jsonClient.get(apiRoutes.checkToken, { headers: {Authorization: 'Bearer ' + token} })
+    return jsonClient.get(apiRoutes.checkToken, { headers: { Authorization: 'Bearer ' + token } })
+  },
+  logout () {
+    localStorage.removeItem('token')
   }
 }

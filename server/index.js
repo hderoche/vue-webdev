@@ -15,6 +15,6 @@ server.on('listening', () => {console.log('listening on port ' + port)})
 server.on('error', () => console.log('error on initialisation'))
 
 // Appel du routeur crypto
-app.use('/api/crypto',cryptoRouter)
-app.use('/api/auth', authRouter)
+app.use('/api/v1/crypto',cryptoRouter)
+app.use('/api/v1/auth', authRouter)
 server.listen(port)
