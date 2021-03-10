@@ -1,14 +1,13 @@
 <template>
   <nav>
-    <roudiv>
-         <ter-link class="nav-link menu-item" to="/">Home</router-link>
+    <div>
+         <router-link class="nav-link menu-item" to="/">Home</router-link>
              <router-link class="nav-link menu-item" to="/crypto">Crypto-monnaies</router-link>
              <router-link class="nav-link menu-item" to="/erc20">ETH Explorer</router-link>
              <router-link class="nav-link menu-item" to="/infos">Infos</router-link>
              <router-link class="nav-link menu-item" to="/about">À propos</router-link>
              <router-link class="nav-link menu-item" to='/login' v-if="!user"></router-link>
-             <router-link class="nav-link menu-item" v-if="user"></router-link>
-       </div>
+        </div>
     <!-- Passer la liste des liens au component : Dropdown -->
   </nav>
 </template>
