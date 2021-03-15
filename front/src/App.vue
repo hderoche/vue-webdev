@@ -6,8 +6,8 @@
           <router-link class="nav-link menu-item" to="/erc20">ETH Explorer</router-link> |
           <router-link class="nav-link menu-item" to="/infos">Infos</router-link> |
           <router-link class="nav-link menu-item" to="/about">À propos</router-link> |
-          <router-link class="nav-link menu-item" to='/login' v-if="!user">Se connecter</router-link> |
-          <router-link class="nav-link menu-item" to="" v-if="user"><button @click.prevent="tryLogout">Logout</button></router-link>
+          <router-link class="nav-link menu-item" to='/login' v-if="!isLoggedIn">Se connecter</router-link> |
+          <router-link class="nav-link menu-item" to="" v-if="isLoggedIn"><button @click.prevent="tryLogout">Logout</button></router-link>
        </div>
     <body>
       <router-view/>
@@ -16,12 +16,14 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapState, mapGetters } from 'vuex'
 export default {
   name: 'app',
-  computed: mapState(['user']),
-  mounted () {
-    this.$store.dispatch('checkToken')
+  computed: {
+    ...mapState({
+      user: state => state.user.data
+    }),
+    ...mapGetters(['isLoggedIn'])
   },
   methods: {
     tryLogout () {
