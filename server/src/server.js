@@ -1,13 +1,13 @@
 import express from 'express'
 
-import { getConnection } from './src/connect-db.js'
+import { getConnection } from './connect-db.js'
 
 import dotenv from 'dotenv'
 dotenv.config()
 
 // Importation des routers
-import cryptoRouter  from './src/routes/crypto.js'
-import authRouter from './src/routes/auth.js'
+import cryptoRouter  from './routes/crypto.js'
+import authRouter from './routes/auth.js'
 
 
 const app = express()

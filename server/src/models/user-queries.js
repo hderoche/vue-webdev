@@ -1,3 +1,4 @@
+import userModels from './user-models.js'
 import User from './user-models.js'
 
 
@@ -13,13 +14,12 @@ import User from './user-models.js'
  * @function
  * @async
  * 
- * @param {import:('./user-models').UserData} userData
- * @returns {Promise.<UserMongooseDocuments>}
+ * @param {import('./user-models').UserData} userData
+ * @returns {Promise.<import('./user-models').UserMongooseDocument>}
  * 
  */
 export function createUser (userData) {
     const user = new User(userData)
-    user.save
     return user.save().then(() => user)
 }
 

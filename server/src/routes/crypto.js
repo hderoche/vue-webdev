@@ -1,6 +1,6 @@
 import express from 'express'
-import * as  cryptoCtrl from '../src/controllers/crypto.js'
-import {verifyToken} from '../src/controllers/middleware/verify-token.js'
+import * as  cryptoCtrl from '../controllers/crypto.js'
+import {verifyToken} from '../middleware/verify-token.js'
 
 const router = express.Router();
 
