@@ -1,6 +1,4 @@
-require('dotenv').config();
 import {createToken, checkToken} from '../utils/token.js'
-
 
 const first = {
   id: 1,
@@ -9,7 +7,7 @@ const first = {
 }
 
 // Fonction login cote server
-exports.login = (req, res) => {
+export const login = (req, res) => {
   const body = req.body || {}
   const {user, password} = body
 
@@ -44,7 +42,7 @@ exports.login = (req, res) => {
 }
 
 
-exports.checkToken = (req, res) => {
+export const checkTokenController = (req, res) => {
   const token = req.headers.authorization.replace('Bearer ', '')
   try {
     const success = checkToken(token)
@@ -57,7 +55,7 @@ exports.checkToken = (req, res) => {
 }
 
 // Fonction à faire pour s'inscrire
-exports.register = (req, res) => {
+export const register = (req, res) => {
   const body = req.body || {}
   const { user, password } = body
   

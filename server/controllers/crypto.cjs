@@ -1,11 +1,7 @@
-const fetch = require('isomorphic-fetch')
-const db = require('../db-management');
-require('dotenv').config();
+import fetch from 'isomorphic-fetch'
+
 const cryptofile = './databaseCrypto.json'
 
-sendRequest = function() {
-    
-}
 
 // This function gets the list of coins and store them in cache if the timeout is still valid
 // I store the list in a databaseCrypto.json file

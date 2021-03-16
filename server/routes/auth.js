@@ -1,11 +1,9 @@
-
-export default authRouter {
-const express = require('express');
+import express from 'express'
+import * as authController  from '../controllers/auth.js'
 const router = new express.Router();
-const authController = require('../controllers/auth')
 
 router.post('/token', authController.login)
-router.post('/user', authController.saveUser)
-router.get('/user', authController.checkToken)
+router.post('/user', authController.register)
+router.get('/user', authController.checkTokenController)
 
-}
+export default router

@@ -6,7 +6,7 @@ import dotenv from 'dotenv'
 dotenv.config()
 
 // Importation des routers
-import cryptoRouter  from './routes/crypto.js'
+import cryptoRouter  from './routes/crypto.cjs'
 import authRouter from './routes/auth.js'
 
 
