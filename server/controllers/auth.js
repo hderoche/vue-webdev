@@ -1,16 +1,5 @@
 require('dotenv').config();
-const crypto = require('crypto');
-const jwt = require('jsonwebtoken')
-const db = require('../db-management');
-
-const databaseFile = './database.json'
-
-// Database format for User, Password :
-
-// {
-//     user: "user",
-//     password: "password"
-// }
+import {createToken, checkToken} from '../utils/token.js'
 
 
 const first = {
@@ -19,27 +8,7 @@ const first = {
   password: 'admin'
 }
 
-
-
-function createToken (payload) {
-  
-  const secret = process.env.SECRET || secretKey
-  const token = jwt.sign(payload, secret, options)
-  return token
-}
-
-const secretKey = 'b374211dddaa3e48391e614efc4747f3cdacc8d6e8c53d930d72649f3179e462'
-const options = {
-  expiresIn: '24h',
-}
-
-function checkToken (token) {
-  const secret = process.env.SECRET || secretKey
-  jwt.verify(token, secret)
-  const content = jwt.decode(token)
-  return content
-}
-
+// Fonction login cote server
 exports.login = (req, res) => {
   const body = req.body || {}
   const {user, password} = body
@@ -51,6 +20,7 @@ exports.login = (req, res) => {
     })
     return
   }
+
   const isValidCredentials = user === first.user && password === first.password
 
   if (!isValidCredentials) {
@@ -73,24 +43,20 @@ exports.login = (req, res) => {
   })
 }
 
+
 exports.checkToken = (req, res) => {
   const token = req.headers.authorization.replace('Bearer ', '')
   try {
-    const payload = checkToken(token)
-    const user = payload.user
-    console.log(payload)
-    res.json({success: true,
-    user: {
-      ...first,
-      password: undefined
-      }
-    })
+    const success = checkToken(token)
+    res.json({success,
+      })
   } catch {
-    res.status(401).json({success: false, 
+    res.status(401).json({success, 
     message: 'Invalid Token'})
   }
 }
 
+// Fonction à faire pour s'inscrire
 exports.register = (req, res) => {
   const body = req.body || {}
   const { user, password } = body

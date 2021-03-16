@@ -1,9 +1,9 @@
-const auth = require('../controllers/auth.js')
+import {checkToken} from '../utils/token.js'
 
 function verifyToken (req, res, next) {
     try {
         const token = req.header('Authorization').replace('Bearer ', '')
-        auth.checkToken(token)
+        checkToken(token)
         next()
     } catch (error) {
         res.status(401)
