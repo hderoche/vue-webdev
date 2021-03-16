@@ -12,7 +12,7 @@ const cryptofile = './databaseCrypto.json'
 // Si content.timestamp + timeout < currentTimestamp => save data + new timestamp
 
 // Sinon send GetDB
-exports.getListCoins = (req, res) => {
+export const getListCoins = (req, res) => {
     try {
         const timeout = 1800;
         const currentTimestamp = Math.ceil(Date.now());
@@ -59,7 +59,7 @@ exports.getListCoins = (req, res) => {
     }
 }
 
-exports.getIndicators = (req, res) => {
+export const getIndicators = (req, res) => {
     try {
         coin = req.params.coin
         console.log(coin)
@@ -84,7 +84,7 @@ exports.getIndicators = (req, res) => {
     }
 }
 
-exports.ethExplorer = (req, res) => {
+export const ethExplorer = (req, res) => {
     const time = Math.floor(new Date().getTime() / 1000)
     const token = process.env.API_KEY
     fetch('https://api.etherscan.io/api?module=block&action=getblocknobytime&timestamp=' + time + '&closest=before&apikey=' + token)
@@ -102,7 +102,7 @@ exports.ethExplorer = (req, res) => {
         })
 }
 
-exports.getLocalCryptoStorage = (req, res) => {
+export const getLocalCryptoStorage = (req, res) => {
     db.getDb(cryptofile).then(content => {
         // console.log(content)
         res.status(200).json({success: true, data: content})

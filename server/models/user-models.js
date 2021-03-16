@@ -50,3 +50,20 @@ userSchema.pre('save', function preSave () {
 })
 
 export default mongoose.model('User', userSchema)
+
+/**
+ * @typedef UserMongooseDocument
+ * @type {UserData & import('mongoose').Document}
+ */
+
+/**
+ * @typedef UserData
+ * @type {Object}
+ * 
+ * @property {string} firstname - Prénom
+ * @property {string} lastname - Nom
+ * @property {string} email - Adresse email
+ * @property {string} login - login
+ * @property {string} password - mot de passe
+ * 
+ */

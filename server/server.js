@@ -1,12 +1,12 @@
 import express from 'express'
 
-import { getConnection } from './connect.js'
+import { getConnection } from './connect-db.js'
 
 import dotenv from 'dotenv'
 dotenv.config()
 
 // Importation des routers
-import cryptoRouter  from './routes/crypto.cjs'
+import cryptoRouter  from './routes/crypto.js'
 import authRouter from './routes/auth.js'
 
 

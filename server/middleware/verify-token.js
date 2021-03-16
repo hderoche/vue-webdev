@@ -1,6 +1,6 @@
 import {checkToken} from '../utils/token.js'
 
-function verifyToken (req, res, next) {
+export function verifyToken (req, res, next) {
     try {
         const token = req.header('Authorization').replace('Bearer ', '')
         checkToken(token)
@@ -13,5 +13,3 @@ function verifyToken (req, res, next) {
         })        
     }
 }
-
-module.exports = verifyToken
