@@ -13,6 +13,8 @@ services:
       - mongo
     ports:
       - 3000:3000
+    environment:
+      MONGO_URL: mongodb://venom:venom@mongo:27017/venom
 
   mongo:
     image: mongo
