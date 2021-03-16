@@ -1,37 +1,33 @@
-  
 import express from 'express'
 
-import { createToken, checkToken } from './utils/token.js'
 import { getConnection } from './connect.js'
 
-import { createUser } from './models/user-queries.js'
-
 import dotenv from 'dotenv'
+dotenv.config()
+
+// Importation des routers
+import cryptoRouter  from './routes/crypto.js'
+import authRouter from './routes/auth.js'
+
 
 const app = express()
-const http = require('http')
 
-const cryptoRouter = require('./routes/crypto')
-const authRouter = require('./routes/auth')
-require('dotenv').config()
-// Utilisation du JSON
+// Configuration du serveur
 app.use(express.json())
-const server = http.createServer(app)
-
 const port = process.env.PORT || 3600
-server.on('listening', () => {console.log('listening on port ' + port)})
-server.on('error', () => console.log('error on initialisation'))
+app.on('listening', () => {console.log('listening on port ' + port)})
+app.on('error', () => console.log('error on initialisation'))
+
 
 // Appel du routeur crypto
-app.use('/api/v1/crypto',cryptoRouter)
+app.use('/api/v1/crypto', cryptoRouter)
 app.use('/api/v1/auth', authRouter)
 
 
 
-
-getConnectionToMongoDB().then(({db}) => {
-    createUser({firstname: 'admin', lastname: 'admin', email: 'admin@admin.com', password: 'admin', login: 'admin'})
-    server.listen(port, () => {
+// Connection à la base de données MongoDB
+getConnection().then(() => {
+    app.listen(port, () => {
         console.log(`Example app listening at http://localhost:${port}`)
     })
 }).catch(error => {

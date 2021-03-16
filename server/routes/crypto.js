@@ -9,4 +9,4 @@ router.get('/local', cryptoCtrl.getLocalCryptoStorage)
 router.get('/coin/:coin', checkToken,cryptoCtrl.getIndicators)
 
 
-module.exports = router;
+module.exports = cryptoRouter;
