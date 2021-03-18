@@ -1,5 +1,6 @@
 import {createToken, checkToken} from '../utils/token.js'
-
+import * as userQueries from '../models/user-queries.js'
+import {compareHash} from '../utils/crypto.js'
 const first = {
   id: 1,
   user: 'admin',
@@ -9,36 +10,49 @@ const first = {
 // Fonction login cote server
 export const login = (req, res) => {
   const body = req.body || {}
-  const {user, password} = body
-
-  if (!user || !password) {
-    res.send(401).json({
+  const {login, password} = body
+  
+  if (!login || !password) {
+    res.sendStatus(401).json({
       success: false, 
       message: 'User and password are required'
     })
     return
   }
+  
+  userQueries.getUserByLogin(login).then((doc) => {
 
-  const isValidCredentials = user === first.user && password === first.password
-
-  if (!isValidCredentials) {
-    res.status(401).json({
-      success: false,
-      message: 'Credentials are not valid'
+    const user = doc
+    
+    const isValidCredentials = compareHash(password, doc.password)
+    // const isValidCredentials = user === first.user && password === first.password
+    if (!isValidCredentials) {
+      res.sendStatus(401).json({
+        success: false,
+        message: 'Credentials are not valid'
+      })
+    }
+    
+    return doc
+    
+  }).then((doc) => {
+    const payload = {
+      login, password
+    }
+    const token = createToken(payload)
+    
+    res.status(201).json({
+      success: true,
+      user: {
+        ...doc,
+        password: undefined,
+      },
+      token
     })
-  }
-  const payload = {
-    user, password
-  }
-  const token = createToken(payload)
-  res.status(201).json({
-    success: true,
-    user: {
-      ...first,
-      password: undefined,
-    },
-    token
+  }).catch(err => {
+    console.error(err)
   })
+
 }
 
 
@@ -52,11 +66,4 @@ export const checkTokenController = (req, res) => {
     res.status(401).json({success, 
     message: 'Invalid Token'})
   }
-}
-
-// Fonction à faire pour s'inscrire
-export const register = (req, res) => {
-  const body = req.body || {}
-  const { user, password } = body
-  
 }

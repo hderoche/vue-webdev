@@ -7,6 +7,7 @@
           <router-link class="nav-link menu-item" to="/infos">Infos</router-link> |
           <router-link class="nav-link menu-item" to="/about">À propos</router-link> |
           <router-link class="nav-link menu-item" to='/login' v-if="!isLoggedIn">Se connecter</router-link> |
+          <router-link class="nav-link menu-item" to='/register' v-if="!isLoggedIn">S'inscrire</router-link> |
           <router-link class="nav-link menu-item" to="" v-if="isLoggedIn"><button @click.prevent="tryLogout">Logout</button></router-link>
        </div>
     <body>

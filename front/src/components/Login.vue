@@ -1,15 +1,15 @@
 <template>
   <div class="onglet">
       <h1>Connexion</h1>
-      <div class="deco" v-if="this.$store.state.user !== undefined">
+      <div class="deco" v-if="isLoggedIn">
         <button @click.prevent="tryLogout">Déconnexion</button>
       </div>
       <div v-else>
         <form @submit.prevent="tryLogin">
           <p>
-              <label for="username">Username</label>
+              <label for="login">Login</label>
               <br>
-              <input type="text" placeholder="username" id="username" v-model="username" required>
+              <input type="text" placeholder="login" id="login" v-model="login" required>
           </p>
           <p>
               <label for="password">Password</label>
@@ -23,21 +23,29 @@
 </template>
 
 <script>
+import { mapState, mapGetters } from 'vuex'
+
 export default {
   name: 'login',
   data () {
     return {
-      username: undefined,
+      login: undefined,
       password: undefined
     }
   },
+  computed: {
+    ...mapState({
+      user: state => state.user.data
+    }),
+    ...mapGetters(['isLoggedIn'])
+  },
   methods: {
     tryLogin () {
-      const user = this.username
+      const login = this.login
       const password = this.password
-      const payload = { user, password }
+      const payload = { login, password }
       this.$store.dispatch('login', payload)
-      this.username = ''
+      this.login = ''
       this.password = ''
     },
     tryLogout () {

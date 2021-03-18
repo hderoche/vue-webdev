@@ -42,14 +42,14 @@ export default {
         })
     },
     register ({ commit }, credentials) {
-      api.login(credentials).then(data => {
-        const { success, user, message } = data
+      api.register(credentials).then(data => {
+        const { success, message } = data
         if (!success) {
           // afficher le message contenu dans 'message'
           console.log(message)
           return
         }
-        commit('setUser', user)
+        alert('Successfully registered !!')
       })
     },
     logout ({ commit }) {

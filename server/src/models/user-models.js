@@ -2,7 +2,7 @@ import mongoose from 'mongoose'
 import {hash} from '../utils/crypto.js'
 const {Schema} = mongoose
 
-const userSchema = new Schema(
+const UserSchema  = new Schema(
     {
         firstname: {
             type: String,
@@ -33,24 +33,33 @@ const userSchema = new Schema(
     }
 )
 
-userSchema.set('toJSON', {
-    transform (doc, ret) {
-        delete ret.password
-        return ret
-    }
+// Ne marche pas en l'etat
+
+// UserSchema.set('save', {
+//     transform (doc, ret) {
+//         console.log('ret :',ret)
+//         delete ret.password
+//         return ret
+//     }
+// })
+
+UserSchema.post('save', function() {
+    const user = this
+    user.password = undefined
 })
-  
-userSchema.pre('save', function preSave () {
+
+UserSchema.pre('save', async function (next) {
     const user = this
   
     if (!user.isModified('password')) {
-      return
+      return next()
     }
-    user.password = hash(user.password)
+    this.password = await hash(user.password)
+    next()
 })
-
-export default mongoose.model('User', userSchema)
-
+  
+export default mongoose.model('User', UserSchema)
+  
 /**
  * @typedef UserMongooseDocument
  * @type {UserData & import('mongoose').Document}

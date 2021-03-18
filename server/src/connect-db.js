@@ -1,4 +1,6 @@
 import mongoose from 'mongoose'
+import dotenv from 'dotenv'
+dotenv.config()
 const defaultMongoUrl = 'mongodb://venom:venom@localhost:27017/venom'
 
 const mongoOptions = {

@@ -1,4 +1,3 @@
-import userModels from './user-models.js'
 import User from './user-models.js'
 
 
@@ -9,19 +8,19 @@ import User from './user-models.js'
 // Delete
 
 /**
- * Créer un utilisateur dans la base de données
+ * Crée un utilisateur dans la base de données
  * 
  * @function
  * @async
  * 
- * @param {import('./user-models').UserData} userData
- * @returns {Promise.<import('./user-models').UserMongooseDocument>}
- * 
+ * @param {import('./user-model').UserData} userData 
+ * @returns {Promise.<import('./user-model').UserMongooseDocument>}
  */
-export function createUser (userData) {
+ export function createUser (userData) {
     const user = new User(userData)
-    return user.save().then(() => user)
-}
+    return user.save().then((usr) => {
+        return usr})
+  }
 
 export function getUserById(id){
     return User.findById(id)

@@ -1,6 +1,11 @@
 import jwt from 'jsonwebtoken'
 
-const secretKey = process.env.TOKEN_SECRET
+// necessaire pour importer la secret key
+import dotenv from 'dotenv'
+dotenv.config()
+
+
+const secretKey = process.env.TOKEN_SECRET 
 const options = {
     expiresIn: '24h',
 }
@@ -16,6 +21,7 @@ const options = {
  */
 export function createToken (payload) {
     const secret = secretKey
+    console.log(secret)
     const token = jwt.sign(payload, secret, options)
     return token
 }
