@@ -21,7 +21,6 @@ const options = {
  */
 export function createToken (payload) {
     const secret = secretKey
-    console.log(secret)
     const token = jwt.sign(payload, secret, options)
     return token
 }

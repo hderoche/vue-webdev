@@ -1,11 +1,7 @@
 import {createToken, checkToken} from '../utils/token.js'
 import * as userQueries from '../models/user-queries.js'
 import {compareHash} from '../utils/crypto.js'
-const first = {
-  id: 1,
-  user: 'admin',
-  password: 'admin'
-}
+
 
 // Fonction login cote server
 export const login = (req, res) => {
