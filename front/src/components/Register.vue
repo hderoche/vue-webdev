@@ -2,30 +2,35 @@
   <div>
     <div class="onglet">
         <h1>Inscription</h1>
-        <form @submit.prevent="register">
+        <form @submit.prevent="tryRegister">
             <p>
-                <label for="username">Username</label>
+                <label for="login">Login</label>
                 <br>
-                <input type="text" placeholder="Ex. me" id="username" v-model="username" required>
+                <input type="text" placeholder="Ex. me" id="login" v-model="login" required>
             </p>
             <p>
                 <label for="password">Password</label>
                 <br>
                 <input type="password" placeholder="password" id="password" v-model="password" required>
             </p>
-            <button type="submit">Envoyer</button>
+            <p>
+                <label for="firstname">Prénom</label>
+                <br>
+                <input type="text" placeholder="Jean..." id="firstname" v-model="firstname" required>
+            </p>
+            <p>
+                <label for="lastname">Nom</label>
+                <br>
+                <input type="text" placeholder="Dupont..." id="lastname" v-model="lastname" required>
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <br>
+                <input type="text" placeholder="jean.dupont@email.com" id="email" v-model="email" required>
+            </p>
+            <button type="submit" class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">Envoyer</button>
         </form>
     </div>
-    <div>
-        <p>
-          Username :
-          {{ username }}
-        </p>
-        <p>
-          Password :
-          {{ password }}
-        </p>
-      </div>
   </div>
 </template>
 
@@ -33,33 +38,30 @@
 export default {
   data () {
     return {
-      username: undefined,
-      password: undefined
+      login: undefined,
+      password: undefined,
+      firstname: undefined,
+      lastname: undefined,
+      email: undefined
     }
   },
   methods: {
-    register () {
-      const user = this.username
+    tryRegister () {
+      const login = this.login
       const password = this.password
-      const payload = JSON.stringify({ user, password })
+      const lastname = this.lastname
+      const firstname = this.firstname
+      const email = this.email
+
+      const payload = { login, password, firstname, lastname, email }
       console.log(payload)
-      fetch('/api/user', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: payload
-      })
-        .then(res => res.json())
-        .then(({ success, message }) => {
-          if (success) {
-            window.alert(message)
-            this.$router.push({ path: '/' })
-          } else {
-            window.alert(message)
-          }
-        })
-        .catch(error => { this.error = error })
+      this.$store.dispatch('register', payload)
+      this.login = ''
+      this.password = ''
+      this.lastname = ''
+      this.firstname = ''
+      this.email = ''
+      this.$router.push('/login')
     }
   }
 }
@@ -87,7 +89,7 @@ label {
 }
 .onglet {
   width: 50%;
-  height: 350px;
+  height: auto;
   margin-left: 25%;
   margin-top: 3em;
   padding: 30px;

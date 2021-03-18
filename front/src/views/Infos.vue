@@ -190,7 +190,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="css" scoped>
 h1, h3 {
   color:#6C63FF;
 }

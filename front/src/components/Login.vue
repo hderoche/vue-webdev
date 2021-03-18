@@ -1,43 +1,51 @@
 <template>
   <div class="onglet">
       <h1>Connexion</h1>
-      <div class="deco" v-if="this.$store.state.user !== undefined">
+      <div class="deco" v-if="isLoggedIn">
         <button @click.prevent="tryLogout">Déconnexion</button>
       </div>
       <div v-else>
         <form @submit.prevent="tryLogin">
           <p>
-              <label for="username">Username</label>
+              <label for="login">Login</label>
               <br>
-              <input type="text" placeholder="username" id="username" v-model="username" required>
+              <input type="text" placeholder="login" id="login" v-model="login" required>
           </p>
           <p>
               <label for="password">Password</label>
               <br>
               <input type="password" placeholder="password" id="password" v-model="password" required>
           </p>
-          <button type="submit" value="Se connecter"> se connecter</button>
+          <button type="submit" class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700" value="Se connecter"> se connecter</button>
         </form>
       </div>
   </div>
 </template>
 
 <script>
+import { mapState, mapGetters } from 'vuex'
+
 export default {
   name: 'login',
   data () {
     return {
-      username: undefined,
-      password: undefined
+      login: undefined,
+      password: undefined,
     }
+  },
+  computed: {
+    ...mapState({
+      user: state => state.user.data
+    }),
+    ...mapGetters(['isLoggedIn'])
   },
   methods: {
     tryLogin () {
-      const user = this.username
+      const login = this.login
       const password = this.password
-      const payload = { user, password }
+      const payload = { login, password }
       this.$store.dispatch('login', payload)
-      this.username = ''
+      this.login = ''
       this.password = ''
     },
     tryLogout () {
