@@ -11,7 +11,7 @@
             </a>
           </div>
           <div class="-mr-2 -my-2 md:hidden">
-            <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false">
+            <button type="button" v-on:click.prevent="closeMenu()" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false">
               <span class="sr-only">Open menu</span>
               <!-- Heroicon name: outline/menu -->
               <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -31,7 +31,7 @@
           <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
             <router-link class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900" to='/login' v-if="!isLoggedIn">Se connecter</router-link>
             <router-link class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700" to='/register' v-if="!isLoggedIn">S'inscrire</router-link>
-            <router-link class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700" to="" v-if="isLoggedIn"><button @click.prevent="tryLogout">Logout</button></router-link>
+            <router-link class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700" to="" v-if="isLoggedIn" @click.prevent="tryLogout">Logout</router-link>
           </div>
         </div>
       </div>
@@ -46,7 +46,7 @@
           From: "opacity-100 scale-100"
           To: "opacity-0 scale-95"
       -->
-      <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right z-40 md:hidden">
+      <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right z-40 md:hidden" v-bind="{active: 'showMenu'}">
         <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
           <div class="pt-5 pb-6 px-5">
             <div class="flex items-center justify-between">
@@ -54,8 +54,7 @@
                 <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="Workflow">
               </div>
               <div class="-mr-2">
-                <button type="button" v-on:click.prevent="closeMenu()" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 {'active': showMenu}">
-                  <span class="sr-only">Close menu</span>
+                <button type="button" v-on:click.prevent="closeMenu()" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 ">
                   <!-- Heroicon name: outline/x -->
                   <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
