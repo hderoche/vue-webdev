@@ -178,14 +178,14 @@ export default {
   name: 'app',
   data () {
     return {
-      showMenu: false,
+      showMenu: false
     }
   },
   computed: {
     ...mapState({
-      user: state => state.user.data,
+      user: state => state.user.data
     }),
-    ...mapGetters(['isLoggedIn']),
+    ...mapGetters(['isLoggedIn'])
   },
   methods: {
     tryLogout () {
@@ -194,8 +194,8 @@ export default {
     closeMenu () {
       this.showMenu = !this.showMenu
       console.log(this.showMenu)
-    },
-  },
+    }
+  }
 }
 </script>
 

@@ -30,7 +30,7 @@ export default {
   data () {
     return {
       login: undefined,
-      password: undefined,
+      password: undefined
     }
   },
   computed: {
