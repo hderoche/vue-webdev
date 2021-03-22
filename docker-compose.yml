@@ -6,7 +6,7 @@ services:
   api:
     image: venom_api:latest
     build:
-      context: ./server
+      context: ./api
       dockerfile: Dockerfile
     container_name: venom_api
     depends_on:
