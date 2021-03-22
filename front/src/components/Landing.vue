@@ -8,12 +8,12 @@
             </h2>
             <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
               <div class="inline-flex rounded-md shadow">
-                <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
-                  S'inscrire
-                </a>
+                <router-link to="/register" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+                S'inscrire
+                </router-link>
               </div>
               <div class="ml-3 inline-flex rounded-md shadow">
-                <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50">
+                <a href="#test" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50">
                   En savoir plus
                 </a>
               </div>
@@ -24,9 +24,9 @@
         <div style="display: inline-block">
             <h1 class="titre" >Monitorer les transactions des tokens ERC-20</h1>
             <img src="@/assets/undraw_crypto_portfolio.svg" alt="" style="width: 60%;"><br>
-            <button @click="toinfos()">En savoir plus</button>
+            <button @click="toinfos()" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">En savoir plus</button>
         </div>
-        <div style="width: 80%; margin: 0 auto; display: table;">
+        <div style="width: 80%; margin: 0 auto; display: table;" id="test">
             <div style="display: inline-flex; margin: auto;">
                 <img src="@/assets/undraw_ethereum.svg" alt="" style="margin: 0 2rem 0 0; width: 50%">
                 <p class="paragraph">
