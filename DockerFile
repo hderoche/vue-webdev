@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY client/src src
 COPY client/public public
-COPY client/.browserslistrc client/babel.config.js client/package.json client/package-lock.json client/vue.config.js ./
+COPY client/.browserslistrc client/babel.config.js client/.eslintrc.js client/package.json client/package-lock.json client/vue.config.js ./
 
 RUN npm ci
 RUN npm run build
