@@ -16,7 +16,7 @@ FROM node:15.11.0 as production
 WORKDIR /app
 
 COPY --from=build /app/dist ./static
-COPY server/src ./src
+COPY api/src ./src
 COPY api/package-lock.json api/package.json ./
 
 RUN npm ci --production
