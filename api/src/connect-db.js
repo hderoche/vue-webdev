@@ -9,6 +9,6 @@ const mongoOptions = {
 }
 
 export function getConnection() {
-    // const mongoUrl = process.env.MONGO_URL || process.env.MONGO_ATLAS || defaultMongoUrl
-    return mongoose.connect(process.env.MONGO_ATLAS, mongoOptions)
+    const mongoUrl = process.env.MONGO_ATLAS || process.env.MONGO_URL || defaultMongoUrl
+    return mongoose.connect(mongoUrl, mongoOptions)
 }

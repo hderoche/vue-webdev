@@ -41,6 +41,17 @@ export function modifyUser(userData) {
     })
 }
 
+export async function updateUser(userData) {
+    const user = await User.findById(userData.id)
+
+    for (const prop in userData) {
+        user[prop] = userData[prop]
+    }
+
+    await user.save()
+    return user
+}
+
 export function deleteUser (user) {
     User.deleteOne({ id: user.id })
 }

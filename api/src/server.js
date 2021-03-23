@@ -14,8 +14,7 @@ const app = express()
 
 // Configuration du serveur
 app.use(express.json())
-app.use(express.static('public'))
-app.use(express.static('files'))
+app.use(express.static('static'))
 
 const port = process.env.PORT || 4000
 app.on('listening', () => {console.log('listening on port ' + port)})

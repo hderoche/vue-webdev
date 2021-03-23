@@ -24,6 +24,27 @@ export const createUserController = (req, res) => {
 
 export const updateUserController = (req, res) => {
   //Récupération des données de la requête
-//   const userData = ...
+  const userData = req.body.user
   //Utilisation de createUser des queries
+  upadateUser(userData)
+    .then(() => {
+      res.status(200).json({
+          success: true,
+          user
+      })
+    })
+    .catch(err => {
+      res.status(501).json({
+          success: false, 
+          message: err
+      })
+    })
+}
+
+export const getAllUsers = async (req, res) => {
+    const users = await getUsers()
+    res.json({
+        succes: true,
+        users,
+    })
 }
