@@ -3,15 +3,21 @@
       <div class="container">
           <br>
           <br>
-          <h1 class="title">Qu'est ce que le Bitcoin ?</h1>
-          <div class="wtb">
-              <p>
-                  Pour créer et gérer les bitcoins, Bitcoin s'appuie sur un logiciel. Dans ce logiciel, les bitcoins sont créés conformément à un protocole qui rétribue les agents (appelés « mineurs ») qui ont traité des transactionsnote 1. Ces agents mettent à contribution leur puissance de calcul informatique afin de vérifier, de sécuriser et d'inscrire les transactions dans un registre virtuelnote 2, appelé la blockchain, en français chaîne de blocs, nom qui vient du fait que l'entité de base de Bitcoin s'appelle un bloc, et que les blocs sont ensuite reliés en une chaîne, la chaine de blocs.
-                <br><br>
-                  Pour chaque nouveau bloc accepté, l'activité de vérification-sécurisation-enregistrement, appelée minage, est rémunérée par des bitcoins nouvellement créés et par les frais des transactions traitées5. En tant que monnaie ou commodité, les bitcoins peuvent être échangés contre d'autres monnaies ou commodités, biens ou services. Le taux d'échange de la cryptomonnaie est fixé sur des places de marché spécialisées et fluctue selon la loi de l'offre et de la demande.
-                <br><br>
-                  Il est possible d'acheter des bitcoins en ligne sur des plateformes spécialisées, des bornes physiques ou en échange de n'importe quel bien ou service avec une personne en possédant déjà (la transaction peut se faire de smartphone à smartphone). Les plateformes permettent également de suivre en temps réel l'évolution du prix du bitcoin par rapport à d'autres monnaies ou cryptomonnaies.
-              </p>
+          <br>
+          <div class="relative py-1 sm:max-w-xl sm:mx-auto">
+            <div class="absolute inset-0 bg-gradient-to-r from-purple-400 to-purple-700 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
+            <div class="relative px-4 py-2 bg-grey shadow-lg sm:rounded-3xl sm:p-20">
+                <h1 class="title">Qu'est ce que le Bitcoin ?</h1>
+              <div class="py-2 text-base text-gray-700 sm:text-lg sm:leading-6">
+                <p>
+                    Pour créer et gérer les bitcoins, Bitcoin s'appuie sur un logiciel. Dans ce logiciel, les bitcoins sont créés conformément à un protocole qui rétribue les agents (appelés « mineurs ») qui ont traité des transactionsnote 1. Ces agents mettent à contribution leur puissance de calcul informatique afin de vérifier, de sécuriser et d'inscrire les transactions dans un registre virtuelnote 2, appelé la blockchain, en français chaîne de blocs, nom qui vient du fait que l'entité de base de Bitcoin s'appelle un bloc, et que les blocs sont ensuite reliés en une chaîne, la chaine de blocs.
+                  <!-- <br><br>
+                    Pour chaque nouveau bloc accepté, l'activité de vérification-sécurisation-enregistrement, appelée minage, est rémunérée par des bitcoins nouvellement créés et par les frais des transactions traitées. En tant que monnaie ou commodité, les bitcoins peuvent être échangés contre d'autres monnaies ou commodités, biens ou services. Le taux d'échange de la cryptomonnaie est fixé sur des places de marché spécialisées et fluctue selon la loi de l'offre et de la demande.
+                  <br><br>
+                    Il est possible d'acheter des bitcoins en ligne sur des plateformes spécialisées, des bornes physiques ou en échange de n'importe quel bien ou service avec une personne en possédant déjà (la transaction peut se faire de smartphone à smartphone). Les plateformes permettent également de suivre en temps réel l'évolution du prix du bitcoin par rapport à d'autres monnaies ou cryptomonnaies. -->
+                </p>
+              </div>
+            </div>
           </div>
           <div class="links">
             <h3 style="margin-bottom: 0.5em;">Summary</h3>
@@ -228,12 +234,11 @@ p, p ul li {
     font-size:13pt;
 }
 .wtb{
-  margin-top: 2rem;
-  padding: 30px;
+  /* margin-top: 2rem; */
+  /* padding: 30px;
   border: 1px solid rgba(255, 255, 240, 1);
   border-radius: 8px;
-  background: rgba(255, 255, 245, 0.9);
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); */
 }
 .links {
   margin-top: 2rem;
