@@ -1,5 +1,51 @@
 <template>
   <div class="main-container">
+    <Banner/>
+    <div class="container mx-auto pt-16">
+                    <div class="mb-10">
+                        <h1 class="xl:text-5xl pt-4 xl:pt-0 text-3xl text-gray-800 text-center font-extrabold mb-4">Derniers Articles</h1>
+                        <p class="text-xl text-gray-600 text-center xl:w-3/5 mx-auto w-11/12">
+                        </p>
+                    </div>
+                    <div class="lg:flex md:flex xl:justify-around sm:flex flex-wrap md:justify-around sm:justify-around lg:justify-around">
+                        <div class="xl:w-1/3 sm:w-5/12 sm:max-w-xs relative mb-32 lg:mb-20 xl:max-w-sm lg:w-1/2 w-11/12 mx-auto sm:mx-0">
+                            <div class="shadow h-64 rounded z-10">
+                                <img src="https://cdn.tuk.dev/assets/photo-1573451444472-7b0b275ab824.jfif" alt="" class="h-full w-full object-cover overflow-hidden rounded" />
+                            </div>
+                            <div class="p-6 shadow-lg w-11/12 mx-auto -mt-20 bg-white rounded z-20 relative">
+                                <p class="uppercase text-sm text-indigo-700 text-center pb-3">Minage</p>
+                                <p class="text-lg text-gray-800 text-center pb-3">Comment fonctionne le minage ?</p>
+                                <p class="text-sm text-gray-800 text-center">
+                                    21 Mars 2021 by <a href="javascript:void(0)"><span class="text-indigo-700 cursor-pointer">Silene Cox</span></a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="xl:w-1/3 sm:w-5/12 sm:max-w-xs relative mb-32 lg:mb-20 xl:max-w-sm lg:w-1/2 w-11/12 mx-auto sm:mx-0">
+                            <div class="shadow h-64 rounded">
+                                <img src="https://cdn.tuk.dev/assets/photo-1544476915-ed1370594142.jfif" alt="" class="h-full w-full object-cover overflow-hidden rounded" />
+                            </div>
+                            <div class="p-6 shadow-lg w-11/12 mx-auto -mt-20 bg-white rounded z-20 relative">
+                                <p class="uppercase text-sm text-indigo-700 text-center pb-3">Analyse Technique</p>
+                                <p class="text-lg text-gray-800 text-center pb-3">Vous pensez que ça va monter ou que ça va descendre ?</p>
+                                <p class="text-sm text-gray-800 text-center">
+                                    14 Février 2021 by <a href="javascript:void(0)"><span class="text-indigo-700 cursor-pointer">Sansa Rollins</span></a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="xl:w-1/3 sm:w-5/12 sm:max-w-xs relative mb-32 lg:mb-20 xl:max-w-sm lg:w-1/2 w-11/12 mx-auto sm:mx-0">
+                            <div class="shadow h-64 rounded">
+                                <img src="https://cdn.tuk.dev/assets/photo-1462331940025-496dfbfc7564.jfif" alt="" class="h-full w-full object-cover overflow-hidden rounded" />
+                            </div>
+                            <div class="p-6 shadow-lg w-11/12 mx-auto -mt-20 bg-white rounded z-20 relative">
+                                <p class="uppercase text-sm text-indigo-700 text-center pb-3">Nouveaux projets</p>
+                                <p class="text-lg text-gray-800 text-center pb-3">En ce printemps de nombreux projets voient le jour, principalement sous la forme d'IDO dans l'écosysteme Polkadot, ...</p>
+                                <p class="text-sm text-gray-800 text-center">
+                                    1 Avril 2021 by <a href="javascript:void(0)"><span class="text-indigo-700 cursor-pointer">Ashley Wilson</span></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
       <div class="container">
           <br>
           <br>
@@ -7,10 +53,10 @@
           <div class="relative py-1 sm:max-w-xl sm:mx-auto">
             <div class="absolute inset-0 bg-gradient-to-r from-purple-400 to-purple-700 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
             <div class="relative px-4 py-2 bg-grey shadow-lg sm:rounded-3xl sm:p-20">
-                <h1 class="title">Qu'est ce que le Bitcoin ?</h1>
+                <h1 style="color: white">Qu'est ce que le Bitcoin ?</h1>
               <div class="py-2 text-base text-gray-700 sm:text-lg sm:leading-6">
                 <p>
-                    Pour créer et gérer les bitcoins, Bitcoin s'appuie sur un logiciel. Dans ce logiciel, les bitcoins sont créés conformément à un protocole qui rétribue les agents (appelés « mineurs ») qui ont traité des transactionsnote 1. Ces agents mettent à contribution leur puissance de calcul informatique afin de vérifier, de sécuriser et d'inscrire les transactions dans un registre virtuelnote 2, appelé la blockchain, en français chaîne de blocs, nom qui vient du fait que l'entité de base de Bitcoin s'appelle un bloc, et que les blocs sont ensuite reliés en une chaîne, la chaine de blocs.
+                    Pour créer et gérer les bitcoins, Bitcoin s'appuie sur un logiciel. Dans ce logiciel, les bitcoins sont créés conformément à un protocole qui rétribue les agents (appelés « mineurs ») qui ont traité des transactionsnote <br> 1. Ces agents mettent à contribution leur puissance de calcul informatique afin de vérifier, de sécuriser et d'inscrire les transactions dans un registre virtuelnote<br> 2, appelé la blockchain, en français chaîne de blocs, nom qui vient du fait que l'entité de base de Bitcoin s'appelle un bloc, et que les blocs sont ensuite reliés en une chaîne, la chaine de blocs.
                   <!-- <br><br>
                     Pour chaque nouveau bloc accepté, l'activité de vérification-sécurisation-enregistrement, appelée minage, est rémunérée par des bitcoins nouvellement créés et par les frais des transactions traitées. En tant que monnaie ou commodité, les bitcoins peuvent être échangés contre d'autres monnaies ou commodités, biens ou services. Le taux d'échange de la cryptomonnaie est fixé sur des places de marché spécialisées et fluctue selon la loi de l'offre et de la demande.
                   <br><br>
@@ -30,7 +76,7 @@
           <div class="wtb" id="1">
           <h3>{{ list_link[0].name }}</h3>
             <br>
-            <div style="display: inline-flex; align-items: center;">
+            <div style="display: inline-flex; align-items: center;" class="card">
               <svg class="left" version="1.1" viewBox="0 0 37.25 37.25" style="enable-background:new 0 0 37.25 37.25;" xml:space="preserve">
     <g>
         <path d="M11.612,28.643c-0.172-0.101-0.424-0.191-0.752-0.275c0.306-0.104,0.553-0.232,0.738-0.393
@@ -135,8 +181,8 @@
                 </ul>
               </p>
           </div>
-          </div>
-          <div class="wtb" id="3">
+        </div>
+          <div class="wtb card" id="3">
           <h3>{{ list_link[2].name }}</h3>
             <br>
           <p>
@@ -171,6 +217,8 @@
               <li><a class="a-link" href="https://www.blockchain-ez.com/pourquoi-la-transformation-blockchain/">Plue-value de la blockchain</a></li>
           </ul>
           </div>
+<div>
+</div>
       </div>
       <Footer/>
   </div>
@@ -178,11 +226,13 @@
 
 <script>
 import Footer from '@/components/Footer.vue'
+import Banner from '@/components/Banner.vue'
 
 export default {
   name: 'Infos',
   components: {
-    Footer
+    Footer,
+    Banner
   },
   data () {
     return {

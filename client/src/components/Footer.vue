@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer" style="vertical-align: middle">
+  <footer class="bg-indigo-600 footer" style="vertical-align: middle">
       <div class="left">
           <p style="color: white; font-weight: 800; margin-left : 20px; margin-top : 12px;">#ToTheMoon</p>
       </div>
@@ -17,7 +17,6 @@ export default {
 
 <style>
 .footer {
-    background-color: #6C63FF;
     width: 100%;
     height: 3rem;
     position: absolute;

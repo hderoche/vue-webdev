@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="onglet">
+    <!-- <div class="onglet">
         <h1>Inscription</h1>
         <form @submit.prevent="tryRegister">
             <p>
@@ -30,7 +30,44 @@
             </p>
             <button type="submit" class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">Envoyer</button>
         </form>
-    </div>
+    </div> -->
+    <div class="bg-white lg:w-4/12 md:6/12 w-10/12 m-auto my-10 shadow-md">
+            <div class="py-8 px-8 rounded-xl">
+                <h1 class="font-medium text-2xl mt-3 text-center">Inscription</h1>
+                <form  @submit.prevent="tryRegister" class="mt-6">
+                    <div class="my-5 text-sm">
+                        <label for="username" class="block text-black">Login</label>
+                        <input type="text" placeholder="login" id="login" v-model="login" required autofocus class="rounded-sm px-4 py-3 mt-3 focus:outline-none bg-gray-100 w-full" />
+                    </div>
+                    <div class="my-5 text-sm">
+                        <label for="password" class="block text-black">Password</label>
+                        <input type="password" placeholder="Password" id="password" v-model="password" required class="rounded-sm px-4 py-3 mt-3 focus:outline-none bg-gray-100 w-full" />
+                    </div>
+                    <div class="my-5 text-sm">
+                        <label for="firstname" class="block text-black">Prénom</label>
+                        <input type="text" placeholder="Prénom" id="firstname" v-model="firstname" required class="rounded-sm px-4 py-3 mt-3 focus:outline-none bg-gray-100 w-full" />
+                    </div>
+                    <div class="my-5 text-sm">
+                        <label for="lastname" class="block text-black">Nom</label>
+                        <input type="text" placeholder="Nom" id="lastname" v-model="lastname" required class="rounded-sm px-4 py-3 mt-3 focus:outline-none bg-gray-100 w-full" />
+                    </div>
+                    <div class="my-5 text-sm">
+                        <label for="email" class="block text-black">Email</label>
+                        <input type="email" placeholder="Email" id="email" v-model="email" required class="rounded-sm px-4 py-3 mt-3 focus:outline-none bg-gray-100 w-full" />
+                    </div>
+
+                    <button type="submit" class="block text-center text-white p-3 duration-300 rounded-sm bg-indigo-600 hover:bg-indigo-700 w-full">Login</button>
+                </form>
+
+                 <div class="flex md:justify-between justify-center items-center mt-10">
+                    <div style="height: 1px;" class="bg-gray-300 md:block hidden w-4/12"></div>
+                      <p class="md:mx-2 text-sm font-light text-gray-400"> Vous avez déjà un compte ? </p>
+                    <div style="height: 1px;" class="bg-gray-300 md:block hidden w-4/12"></div>
+                </div>
+                <p class="mt-12 text-xs text-center font-light text-gray-400"> <router-link to="/login" class="text-black font-medium"> Connectez vous ! </router-link>  </p>
+
+            </div>
+        </div>
   </div>
 </template>
 
@@ -68,41 +105,5 @@ export default {
 </script>
 
 <style scoped>
-h1 {
-  color:#6C63FF;
-  margin-bottom: 1em;
-}
-p {
-  margin-bottom: 1em;
-}
-input {
-  padding: 1% 2% 1% 1%;
-  border-radius: 8px;
-  font-size:medium;
-  margin-top: 8px;
-}
-input:focus {
-  outline:0;
-}
-label {
-  color: #6C63FF;
-}
-.onglet {
-  width: 50%;
-  height: auto;
-  margin-left: 25%;
-  margin-top: 3em;
-  padding: 30px;
-  border: 1px solid rgba(0, 0, 0, 0.9);
-  border-radius: 8px;
-  background:rgba(0, 0, 0, 0.9);
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-}
-button {
-  margin-top: 0.5em;
-}
-button:hover{
-  color: white;
-  background-color:darkblue;
-}
+
 </style>
