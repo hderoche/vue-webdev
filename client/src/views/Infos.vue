@@ -9,6 +9,7 @@
                     </div>
                     <div class="lg:flex md:flex xl:justify-around sm:flex flex-wrap md:justify-around sm:justify-around lg:justify-around">
                         <div class="xl:w-1/3 sm:w-5/12 sm:max-w-xs relative mb-32 lg:mb-20 xl:max-w-sm lg:w-1/2 w-11/12 mx-auto sm:mx-0">
+                          <router-link to="/minage">
                             <div class="shadow h-64 rounded z-10">
                                 <img src="https://cdn.tuk.dev/assets/photo-1573451444472-7b0b275ab824.jfif" alt="" class="h-full w-full object-cover overflow-hidden rounded" />
                             </div>
@@ -19,18 +20,21 @@
                                     21 Mars 2021 by <a href="javascript:void(0)"><span class="text-indigo-700 cursor-pointer">Silene Cox</span></a>
                                 </p>
                             </div>
+                          </router-link>
                         </div>
                         <div class="xl:w-1/3 sm:w-5/12 sm:max-w-xs relative mb-32 lg:mb-20 xl:max-w-sm lg:w-1/2 w-11/12 mx-auto sm:mx-0">
-                            <div class="shadow h-64 rounded">
-                                <img src="https://cdn.tuk.dev/assets/photo-1544476915-ed1370594142.jfif" alt="" class="h-full w-full object-cover overflow-hidden rounded" />
+                            <router-link to="/minage">
+                              <div class="shadow h-64 rounded">
+                                  <img src="https://cdn.tuk.dev/assets/photo-1544476915-ed1370594142.jfif" alt="" class="h-full w-full object-cover overflow-hidden rounded" />
+                              </div>
+                              <div class="p-6 shadow-lg w-11/12 mx-auto -mt-20 bg-white rounded z-20 relative">
+                                  <p class="uppercase text-sm text-indigo-700 text-center pb-3">Analyse Technique</p>
+                                  <p class="text-lg text-gray-800 text-center pb-3">Vous pensez que ça va monter ou que ça va descendre ?</p>
+                                  <p class="text-sm text-gray-800 text-center">
+                                      14 Février 2021 by <a href="javascript:void(0)"><span class="text-indigo-700 cursor-pointer">Sansa Rollins</span></a>
+                                  </p>
                             </div>
-                            <div class="p-6 shadow-lg w-11/12 mx-auto -mt-20 bg-white rounded z-20 relative">
-                                <p class="uppercase text-sm text-indigo-700 text-center pb-3">Analyse Technique</p>
-                                <p class="text-lg text-gray-800 text-center pb-3">Vous pensez que ça va monter ou que ça va descendre ?</p>
-                                <p class="text-sm text-gray-800 text-center">
-                                    14 Février 2021 by <a href="javascript:void(0)"><span class="text-indigo-700 cursor-pointer">Sansa Rollins</span></a>
-                                </p>
-                            </div>
+                            </router-link>
                         </div>
                         <div class="xl:w-1/3 sm:w-5/12 sm:max-w-xs relative mb-32 lg:mb-20 xl:max-w-sm lg:w-1/2 w-11/12 mx-auto sm:mx-0">
                             <div class="shadow h-64 rounded">

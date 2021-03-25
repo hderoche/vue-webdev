@@ -8,6 +8,8 @@ import Details from '../components/CryptoDetails.vue'
 import Infos from '../views/Infos.vue'
 import LoginView from '../views/Login.vue'
 import RegisterView from '../views/Register.vue'
+import Minage from '../views/Article_Minage.vue'
+
 const routes = [
   {
     path: '/',
@@ -48,6 +50,11 @@ const routes = [
     path: '/infos',
     name: 'Infos',
     component: Infos
+  },
+  {
+    path: '/minage',
+    name: 'Minage',
+    component: Minage
   }
 ]
 
