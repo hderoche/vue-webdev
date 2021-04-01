@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import { checkTokenBeforeEnter } from './router-utils'
 
 import LandingView from '../views/Landing.vue'
 import Erc from '../views/Erc.vue'
@@ -24,7 +25,8 @@ const routes = [
   {
     path: '/erc20',
     name: 'ERC-20',
-    component: Erc
+    component: Erc,
+    beforeEnter: checkTokenBeforeEnter
   },
   {
     path: '/crypto',

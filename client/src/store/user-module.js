@@ -29,16 +29,17 @@ export default {
     checkToken ({ commit }) {
       const token = localStorage.getItem('token')
       if (!token) {
-        return
+        return false
       }
       api.checkToken(token)
         .then(data => {
           const { success, message, user } = data
           if (!success) {
             console.warn(message)
-            return
+            return false
           }
           commit('setUser', user)
+          return true
         })
     },
     register ({ commit }, credentials) {

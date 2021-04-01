@@ -1,5 +1,5 @@
 <template>
-  <div class="main-container">
+  <div class="main-container ">
     <Banner/>
     <div class="container mx-auto pt-16">
                     <div class="mb-10">
@@ -50,6 +50,72 @@
                         </div>
                     </div>
                 </div>
+      <div class="grid grid-cols-2 gap-2 m-4 min-h-screen max-w-1/2 justify-self-auto">
+          <div class="min-w-0 p-4 text-white bg-purple-600 rounded-lg shadow-xs">
+            <h4 class="mb-4 font-semibold">
+              Comment en acheter ?
+            </h4>
+            <p>
+            Il existe pléthore de plateformes proposant d’acheter des bitcoins. Nous avons réalisé un comparatif complet avec les forces et faiblesses des principaux sites (frais, niveau d’expérience requis, etc.). Vous y trouverez des espaces de trading réservés aux investisseurs confirmés (Binance, Kraken, Bitstamp, etc.) et des courtiers plus intuitifs (Coinbase, Coinhouse, etc.). Les seconds sont généralement plus simples à utiliser mais pratiquent des frais plus élevés. Il existe aussi quelques comptoirs physiques à Paris (Coinhouse), Caen (Bitcoin Avenue), Brest (Byzantine) ou Bordeaux (Comptoir des cybermonnaies). C'est l'occasion d'y recevoir des conseils personnalisés mais les frais sont également plus élevés.
+
+            </p>
+          </div>
+          <div class="min-w-0 p-4 text-white bg-purple-600 rounded-lg shadow-xs">
+            <h4 class="mb-4 font-semibold">
+              Colored card
+            </h4>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Fuga, cum commodi a omnis numquam quod? Totam exercitationem
+              quos hic ipsam at qui cum numquam, sed amet ratione! Ratione,
+              nihil dolorum.
+            </p>
+          </div>
+          <div class="min-w-0 p-4 text-white bg-purple-600 rounded-lg shadow-xs">
+            <h4 class="mb-4 font-semibold">
+              Colored card
+            </h4>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Fuga, cum commodi a omnis numquam quod? Totam exercitationem
+              quos hic ipsam at qui cum numquam, sed amet ratione! Ratione,
+              nihil dolorum.
+            </p>
+          </div>
+          <div class="min-w-0 p-4 text-white bg-purple-600 rounded-lg shadow-xs">
+            <h4 class="mb-4 font-semibold">
+              Colored card
+            </h4>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Fuga, cum commodi a omnis numquam quod? Totam exercitationem
+              quos hic ipsam at qui cum numquam, sed amet ratione! Ratione,
+              nihil dolorum.
+            </p>
+          </div>
+          <div class="min-w-0 p-4 text-white bg-purple-600 rounded-lg shadow-xs">
+            <h4 class="mb-4 font-semibold">
+              Colored card
+            </h4>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Fuga, cum commodi a omnis numquam quod? Totam exercitationem
+              quos hic ipsam at qui cum numquam, sed amet ratione! Ratione,
+              nihil dolorum.
+            </p>
+          </div>
+          <div class="min-w-0 p-4 text-white bg-purple-600 rounded-lg shadow-xs">
+            <h4 class="mb-4 font-semibold">
+              Colored card
+            </h4>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Fuga, cum commodi a omnis numquam quod? Totam exercitationem
+              quos hic ipsam at qui cum numquam, sed amet ratione! Ratione,
+              nihil dolorum.
+            </p>
+          </div>
+      </div>
       <div class="container">
           <br>
           <br>
@@ -287,7 +353,7 @@ p, p ul li {
     color: #6C63FF;
     font-size:13pt;
 }
-.wtb{
+.wtb {
   /* margin-top: 2rem; */
   /* padding: 30px;
   border: 1px solid rgba(255, 255, 240, 1);

@@ -1,37 +1,7 @@
 <template>
   <div>
-    <!-- <div class="onglet">
-        <h1>Inscription</h1>
-        <form @submit.prevent="tryRegister">
-            <p>
-                <label for="login">Login</label>
-                <br>
-                <input type="text" placeholder="Ex. me" id="login" v-model="login" required>
-            </p>
-            <p>
-                <label for="password">Password</label>
-                <br>
-                <input type="password" placeholder="password" id="password" v-model="password" required>
-            </p>
-            <p>
-                <label for="firstname">Prénom</label>
-                <br>
-                <input type="text" placeholder="Jean..." id="firstname" v-model="firstname" required>
-            </p>
-            <p>
-                <label for="lastname">Nom</label>
-                <br>
-                <input type="text" placeholder="Dupont..." id="lastname" v-model="lastname" required>
-            </p>
-            <p>
-                <label for="email">Email</label>
-                <br>
-                <input type="text" placeholder="jean.dupont@email.com" id="email" v-model="email" required>
-            </p>
-            <button type="submit" class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">Envoyer</button>
-        </form>
-    </div> -->
-    <div class="bg-white lg:w-4/12 md:6/12 w-10/12 m-auto my-10 shadow-md">
+
+    <div class="bg-white lg:w-4/12 md:6/12 w-10/12 m-auto my-10 shadow-md" ref="container">
             <div class="py-8 px-8 rounded-xl">
                 <h1 class="font-medium text-2xl mt-3 text-center">Inscription</h1>
                 <form  @submit.prevent="tryRegister" class="mt-6">
@@ -57,6 +27,8 @@
                     </div>
 
                     <button type="submit" class="block text-center text-white p-3 duration-300 rounded-sm bg-indigo-600 hover:bg-indigo-700 w-full">Login</button>
+                    <button type="button" @click="alertClick()" class="block text-center text-white p-3 duration-300 rounded-sm bg-gray-800 hover:bg-black w-full">Alert</button>
+
                 </form>
 
                  <div class="flex md:justify-between justify-center items-center mt-10">
@@ -72,7 +44,9 @@
 </template>
 
 <script>
+
 export default {
+  name: 'Register',
   data () {
     return {
       login: undefined,
@@ -99,6 +73,9 @@ export default {
       this.firstname = ''
       this.email = ''
       this.$router.push('/login')
+    },
+    alertClick () {
+      console.log('alert click')
     }
   }
 }

@@ -55,7 +55,7 @@
               </div>
               <div class="-mr-2">
                 <button type="button" v-on:click.prevent="closeMenu()" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 {'active': showMenu}">
-                  <span class="sr-only">Close menu</span>
+                  <span class="sr-only">Fermer</span>
                   <!-- Heroicon name: outline/x -->
                   <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -153,13 +153,13 @@
             </div>
             <div>
               <a href="#" class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
-                Sign up
+                S'inscrire
               </a>
               <p class="mt-6 text-center text-base font-medium text-gray-500">
-                Existing customer?
-                <a href="#" class="text-indigo-600 hover:text-indigo-500">
-                  Sign in
-                </a>
+                Déjà inscrit ?
+                <router-link to="/login" class="text-indigo-600 hover:text-indigo-500">
+                  Se connecter
+                </router-link>
               </p>
             </div>
           </div>
