@@ -36,7 +36,7 @@
                         </div>
                     </div>
 
-                    <button type="submit" class="block text-center text-white bg-gray-800 p-3 duration-300 rounded-sm hover:bg-black w-full">Login</button>
+                    <button type="submit" class="block text-center text-white p-3 duration-300 rounded-sm bg-gray-800 hover:bg-black w-full">Login</button>
                 </form>
 
                  <div class="flex md:justify-between justify-center items-center mt-10">

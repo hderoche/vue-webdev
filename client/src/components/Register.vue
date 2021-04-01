@@ -1,6 +1,5 @@
 <template>
   <div>
-
     <div class="bg-white lg:w-4/12 md:6/12 w-10/12 m-auto my-10 shadow-md" ref="container">
             <div class="py-8 px-8 rounded-xl">
                 <h1 class="font-medium text-2xl mt-3 text-center">Inscription</h1>
@@ -27,7 +26,7 @@
                     </div>
 
                     <button type="submit" class="block text-center text-white p-3 duration-300 rounded-sm bg-indigo-600 hover:bg-indigo-700 w-full">Login</button>
-                    <button type="button" @click="alertClick()" class="block text-center text-white p-3 duration-300 rounded-sm bg-gray-800 hover:bg-black w-full">Alert</button>
+                    <button type="button" @click="showAlert" class="block text-center text-white p-3 duration-300 rounded-sm bg-gray-800 hover:bg-black w-full">Alert</button>
 
                 </form>
 
@@ -40,22 +39,36 @@
 
             </div>
         </div>
+        <snack-bar
+          v-if="hasMessage"
+          @close="hideAlert"
+        >
+          Ici le message
+        </snack-bar>
   </div>
 </template>
 
 <script>
+import Alert from '@/components/Alert.vue'
 
 export default {
   name: 'Register',
+
+  components: {
+    SnackBar: Alert
+  },
+
   data () {
     return {
       login: undefined,
       password: undefined,
       firstname: undefined,
       lastname: undefined,
-      email: undefined
+      email: undefined,
+      hasMessage: false
     }
   },
+
   methods: {
     tryRegister () {
       const login = this.login
@@ -74,8 +87,13 @@ export default {
       this.email = ''
       this.$router.push('/login')
     },
-    alertClick () {
-      console.log('alert click')
+
+    showAlert () {
+      this.hasMessage = true
+    },
+
+    hideAlert () {
+      this.hasMessage = false
     }
   }
 }
