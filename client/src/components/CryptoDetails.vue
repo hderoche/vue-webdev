@@ -111,10 +111,6 @@ export default {
       fetch('/api/v1/crypto/coin/' + this.coin, { method: 'GET', headers: { Authorization: 'Bearer ' + this.token } })
         .then(data => data.json())
         .then(result => {
-          console.log('sending coin request')
-          console.log('result', result)
-          
-          console.log('result', result.indicators)
           if (result.success) {
             this.infoTable = result.indicators
             this.keys = Object.keys(this.infoTable)
