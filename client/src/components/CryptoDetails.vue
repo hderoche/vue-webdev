@@ -1,7 +1,7 @@
 <template>
   <div>
     <router-link to="/crypto">
-    <button style="margin: 1rem auto 1rem 3rem">Retour</button>
+    <button class="mt-5 bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-4 rounded">Retour</button>
     </router-link>
     <div v-if="done">
       <h2>
@@ -12,72 +12,72 @@
         Current price : {{infoTable.price_usd}} USD
       </h2>
       <div class="tables">
-        <table>
+        <table class="shadow-lg bg-white">
           <tr>
-            <th>RSI</th>
-            <th>Indicator</th>
+            <th class="bg-purple-400 border text-left px-8 py-4">RSI</th>
+            <th class="bg-purple-400 border text-left px-8 py-4">Indicator</th>
           </tr>
           <tr v-for="elt in rsi" :key="elt" >
-            <th>{{elt.name}}</th>
-            <th v-bind:class="{green:elt.value>= 60,red:elt.value <= 40, neutral: elt.value > 40 && elt.value <60}">{{elt.value}}</th>
+            <th class="border px-8 py-4">{{elt.name}}</th>
+            <th class="border px-8 py-4" v-bind:class="{green:elt.value>= 60,red:elt.value <= 40, neutral: elt.value > 40 && elt.value <60}">{{elt.value}}</th>
           </tr>
         </table>
-        <table>
+        <table class="shadow-lg bg-white">
           <tr>
-            <th>Trends</th>
-            <th>Indicator</th>
+            <th class="bg-purple-400 border text-left px-8 py-4">Trends</th>
+            <th class="bg-purple-400 border text-left px-8 py-4">Indicator</th>
           </tr>
           <tr v-for="elt in trend" :key="elt" >
-            <th>{{elt.name}}</th>
-            <th v-bind:class="{green:elt.value>= 60,red:elt.value <= 40, neutral: elt.value > 40 && elt.value <60}">{{elt.value}} %</th>
+            <th class="border px-8 py-4">{{elt.name}}</th>
+            <th class="border px-8 py-4" v-bind:class="{green:elt.value>= 60,red:elt.value <= 40, neutral: elt.value > 40 && elt.value <60}">{{elt.value}} %</th>
           </tr>
         </table>
-        <table>
+        <table class="shadow-lg bg-white">
           <tr>
-            <th>ATR</th>
-            <th>Indicator</th>
+            <th class="bg-purple-400 border text-left px-8 py-4">ATR</th>
+            <th class="bg-purple-400 border text-left px-8 py-4">Indicator</th>
           </tr>
           <tr v-for="elt in atr" :key="elt" >
-            <th>{{elt.name}}</th>
-            <th>{{elt.value}}</th>
+            <th class="border px-8 py-4">{{elt.name}}</th>
+            <th class="border px-8 py-4">{{elt.value}}</th>
           </tr>
         </table>
       </div>
         <div class="tables">
-          <table>
+          <table class="shadow-lg bg-white">
             <tr>
-              <th>Bollinger Band Lower</th>
-              <th>Indicator</th>
-              <th>Percentage</th>
+              <th class="bg-purple-400 border text-left px-8 py-4">Bollinger Band Lower</th>
+              <th class="bg-purple-400 border text-left px-8 py-4">Indicator</th>
+              <th class="bg-purple-400 border text-left px-8 py-4">Percentage</th>
             </tr>
             <tr v-for="elt in bbl" :key="elt" >
-              <th>{{elt.name}}</th>
-              <th>{{elt.value}}</th>
-              <th v-bind:class="{green:elt.percentage >= -2,red:elt.percentage <= -5, neutral: elt.percentage < -2 && elt.percentage > -5}">{{elt.percentage}} %</th>
+              <th class="border px-8 py-4">{{elt.name}}</th>
+              <th class="border px-8 py-4">{{elt.value}}</th>
+              <th class="border px-8 py-4" v-bind:class="{green:elt.percentage >= -2,red:elt.percentage <= -5, neutral: elt.percentage < -2 && elt.percentage > -5}">{{elt.percentage}} %</th>
             </tr>
           </table>
-          <table>
+          <table class="shadow-lg bg-white">
             <tr>
-              <th>Bollinger Band Upper</th>
-              <th>Indicator</th>
-              <th>Percentage</th>
+              <th class="bg-purple-400 border text-left px-8 py-4">Bollinger Band Upper</th>
+              <th class="bg-purple-400 border text-left px-8 py-4">Indicator</th>
+              <th class="bg-purple-400 border text-left px-8 py-4">Percentage</th>
             </tr>
             <tr v-for="elt in bbu" :key="elt" >
-              <th>{{elt.name}}</th>
-              <th>{{elt.value}}</th>
-              <th v-bind:class="{green:elt.percentage >= 5,red:elt.percentage <= 2, neutral: elt.percentage > 2 && elt.percentage < 5}">{{elt.percentage}} %</th>
+              <th class="border px-8 py-4">{{elt.name}}</th>
+              <th class="border px-8 py-4">{{elt.value}}</th>
+              <th class="border px-8 py-4" v-bind:class="{green:elt.percentage >= 5,red:elt.percentage <= 2, neutral: elt.percentage > 2 && elt.percentage < 5}">{{elt.percentage}} %</th>
             </tr>
           </table>
         </div>
           <div class="tables">
-            <table>
+            <table class="shadow-lg bg-white">
               <tr>
-                <th>MACD</th>
-                <th>Indicator</th>
+                <th class="bg-purple-400 border text-left px-8 py-4">MACD</th>
+                <th class="bg-purple-400 border text-left px-8 py-4">Indicator</th>
               </tr>
               <tr v-for="elt in macd" :key="elt" >
-                <th>{{elt.name}}</th>
-                <th>{{elt.value}}</th>
+                <th class="border px-8 py-4">{{elt.name}}</th>
+                <th class="border px-8 py-4">{{elt.value}}</th>
               </tr>
             </table>
           </div>
@@ -108,7 +108,7 @@ export default {
     this.token = localStorage.getItem('token')
     if (this.token !== null) {
       // Fetch the data of the coin
-      fetch('/api/crypto/coin/' + this.coin, { method: 'GET', headers: { Authorization: 'Bearer ' + this.token } })
+      fetch('/api/v1/crypto/coin/' + this.coin, { method: 'GET', headers: { Authorization: 'Bearer ' + this.token } })
         .then(data => data.json())
         .then(result => {
           console.log('sending coin request')

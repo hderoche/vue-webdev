@@ -1,27 +1,29 @@
 <template>
   <div v-if="etherPrice">
-      <h1 style="color:#6C63FF; margin-top: 0.5em;">List of the prices</h1>
+      <h1 class="xl:text-5xl mt-10 pt-16 xl:pt-0 text-3xl text-purple-500 text-center font-extrabold mb-4">List of the prices</h1>
       <br>
       <p>Click on <strong>indicators</strong> to have more information about the cryptocurrency</p>
-      <table style="margin: 2rem auto; border-collapse: collapse; width: 65%;">
+      <table class="shadow-lg bg-white">
             <thead>
-                <th>Rank</th>
-                <th>Symbol</th>
-                <th>Price</th>
-                <th>Currency</th>
-                <th>More</th>
+                <th class="bg-purple-400 border text-left px-8 py-4">Rank</th>
+                <th class="bg-purple-400 border text-left px-8 py-4">Symbol</th>
+                <th class="bg-purple-400 border text-left px-8 py-4">Price</th>
+                <th class="bg-purple-400 border text-left px-8 py-4">Currency</th>
+                <th class="bg-purple-400 border text-left px-8 py-4">More</th>
             </thead>
             <tr v-for="elt in top10" :key="elt" class="row">
-                <th >{{elt.rank}}</th>
-                <th>{{elt.coin_symbol}}</th>
-                <th>{{elt.coin_price}}</th>
-                <th>{{elt.currency}}</th>
+                <td class="border px-8 py-4">{{elt.rank}}</td>
+                <td class="border px-8 py-4">{{elt.coin_symbol}}</td>
+                <td class="border px-8 py-4">{{elt.coin_price}}</td>
+                <td class="border px-8 py-4">{{elt.currency}}</td>
               <router-link :to="{name: 'Details', params: { symbol: elt.coin_symbol }}" class="row deco">
-                <th class="btn-more">Indicator</th>
+                <td class="bg-purple-500 hover:bg-purple-600 text-white border px-8 py-4 rounded">Indicator</td>
               </router-link>
             </tr>
         </table>
-        <button @click="loadMore()" style="text-align: center;" v-if="!clicked">Load more ...</button>
+        <button @click="loadMore()" class="mt-5 bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-4 rounded" v-if="!clicked">
+          Load more ...
+          </button>
 
   </div>
 </template>
@@ -46,17 +48,22 @@ export default {
   },
 
   mounted () {
+    console.log('sending request')
     // Fetch de currencies
     if (localStorage.getItem('token')) {
       const token = 'Bearer ' + localStorage.getItem('token')
-      fetch('/api/crypto/list',
+      fetch('/api/v1/crypto/list',
         {
           method: 'GET',
           headers: {
             Authorization: token
           }
         })
-        .then(data => data.json())
+        .then(data => {
+          console.log('inside response')
+          console.log(data)
+          return data.json()
+        })
         .then(res => {
           console.log(res)
           if (res.success) {
@@ -64,7 +71,7 @@ export default {
             this.top10 = this.currencies.filter(cur => cur.rank <= 10)
             console.log(this.top10)
           } else if (res.success === false) {
-            fetch('/api/crypto/local').then(data => data.json())
+            fetch('/api/v1/crypto/local').then(data => data.json())
               .then(result => {
                 if (result.success) {
                   this.currencies = result.data

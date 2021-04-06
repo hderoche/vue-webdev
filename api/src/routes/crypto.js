@@ -4,9 +4,8 @@ import {verifyToken} from '../middleware/verify-token.js'
 
 const router = express.Router();
 
-router.get('/list', verifyToken, cryptoCtrl.getListCoins)
+router.get('/list', cryptoCtrl.getListCoins)
 router.get('/eth', cryptoCtrl.ethExplorer)
-router.get('/local', cryptoCtrl.getLocalCryptoStorage)
-router.get('/coin/:coin', verifyToken, cryptoCtrl.getIndicators)
+router.get('/coin/:coin', cryptoCtrl.getIndicators)
 
 export default router

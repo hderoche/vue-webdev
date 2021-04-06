@@ -1,8 +1,8 @@
-POST http://localhost:3600/api/v1/auth/user
+POST http://localhost:3600/api/v1/auth/token
 Content-Type: application/json
 
 {
-    "user":"admin",
+    "login":"admin",
     "password":"admin"
 }
 
@@ -17,5 +17,4 @@ GET http://localhost:3600/api/v1/auth/me HTTP/1.1
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYWRtaW4iLCJwYXNzd29yZCI6ImFkbWluIiwiaWF0IjoxNjE1Mzg0MzI4LCJleHAiOjE2MTU0NzA3Mjh9.D2TF7hmJPgdeBuJLZ1sdIaaYGM2qDSTFVnWlyBn6Zgs
 
 ###
-GET http://localhost:3600/api/crypto/list HTTP/1.1
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXNzd29yZCI6IjlmODZkMDgxODg0YzdkNjU5YTJmZWFhMGM1NWFkMDE1YTNiZjRmMWIyYjBiODIyY2QxNWQ2YzE1YjBmMDBhMDgiLCJpYXQiOjE2MTUyMDk1OTAsImV4cCI6MTYxNTI5NTk5MH0.pz4c2VhCVrTc2Rb1NmWe_1BhBkqKwFxv4GRY0YU6D20
+GET http://localhost:3600/api/v1/crypto/coin/BTC HTTP/1.1
