@@ -113,6 +113,7 @@ export default {
         .then(result => {
           console.log('sending coin request')
           console.log('result', result)
+          
           console.log('result', result.indicators)
           if (result.success) {
             this.infoTable = result.indicators
